@@ -1,0 +1,47 @@
+<!--新版返回顶部-->
+<div class="online-wrap">
+    <div class="online-fixed">
+        <div class="online-tool online-tool-1" onclick="openCustomerService()">
+        </div>
+        <div class="online-tool online-tool-2">
+            <div class="r_wrap" style="display: none;">
+                <span class="ot-sjx"></span>
+                <div class="online-unfold ou-w1">
+                    <div class="flol">
+                        <img src="__CDN__/assets/picture/online-tool-sj.png">
+                        <p class="ou-txt">700度手机版</p>
+                    </div>
+                    <div class="flor">
+                        <img src="__CDN__/assets/picture/online-tool-wx.png">
+                        <p class="ou-txt">700度微信公众号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="online-tool online-tool-3" onclick="openCustomerService()">
+        </div>
+        <div class="online-tool online-tool-4">
+            &nbsp;
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.online-tool').each(function() {
+        $(this).hover(
+            function() {
+                $(this).find('.r_wrap').stop(true, true).show(200)
+            },
+            function() {
+                $(this).find('.r_wrap').stop(true, true).hide(200)
+            });
+    });
+    //返回顶部
+    //返回顶部js
+    $(".online-tool-4").click(function(){
+        $("html,body").animate({scrollTop:'0px'},300);
+    });
+    //点击客服
+    function openCustomerService(){
+        window.open("http://v1.live800.com/live800/chatClient/chatbox.jsp?companyID=776940&configID=43779&jid=1902871801");
+    }
+</script>

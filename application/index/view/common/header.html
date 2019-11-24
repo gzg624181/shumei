@@ -1,0 +1,62 @@
+<div class="DragBox" id="1423038106490" style="visibility: visible;" starttop="149" startleft="334" startheight="34" startwidth="1123" compid="shopNavigation">
+    <div class="main-serch-container">
+        <div class="container">
+            <h1 class="y_logo">
+                <a href="/" title="700du"><img src="__CDN__{$top.logo}"></a>
+            </h1>
+            <!--nav start-->
+            <div class="y_mainnav">
+                <ul class="menu clearfix">
+                    <li  class="y_active" >
+                        <a href="{:url('index')}">
+                            首页
+                        </a>
+                    </li>
+                    <li >
+                        <a href="{:url('qiye')}">
+                            企业保险
+                        </a>
+                    </li>
+                    <li >
+                        <a href="{:url('help')}">
+                            帮助中心
+                            <span><img src="__CDN__/assets/img/help5.gif"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--nav end-->
+            <div class="fr">
+                <div class="y_serch">
+                    <input type="text" class="form-control" id="keyword" value="" onkeydown="javascript:if(event.keyCode==13) return search();" placeholder="搜'明亚优选'试试">
+                    <a class="btn btn-custom" href="javascript:search();"><i class="fa fa-search"></i></a>
+                </div><!-- End #quick-access -->
+                <div class="y_topcart">
+                    <a href="/customer/toIndex" target="_blank" class="btn btn-custom dropdown-toggle">
+                        <span class="cart-menu-icon"></span>
+                        我的700度<i class="fa fa-angle-right"></i>
+                    </a>
+                </div><!-- End .dropdown-cart-menu-container -->
+            </div>
+        </div><!-- End .container -->
+    </div>
+
+    <script>
+        $("ul li a").each(function(){
+            $this = $(this);
+            if($this[0].href==String(window.location)){
+                $this.parent().addClass("y_active").siblings().removeClass("y_active");
+            }
+        });
+
+        function search() {
+            var keyword = $('#keyword').val();
+            if (keyword == "") {
+                $('#keyword').focus();
+                return;
+            }
+            window.location.href = "/front/productList/toStoreProductList?keyword="
+                + encodeURI(encodeURI(keyword));
+        }
+    </script>
+</div>
