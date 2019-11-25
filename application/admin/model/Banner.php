@@ -1,0 +1,50 @@
+<?php
+
+namespace app\admin\model;
+
+use think\Model;
+
+
+class Banner extends Model
+{
+
+    
+
+    
+
+    // 表名
+    protected $name = 'banner';
+    
+    // 自动写入时间戳字段
+    protected $autoWriteTimestamp = 'int';
+
+    // 定义时间戳字段名
+    protected $createTime = 'createtime';
+    protected $updateTime = false;
+    protected $deleteTime = false;
+
+    // 追加属性
+    protected $append = [
+        'checkinfo_text'
+    ];
+    
+
+    
+    public function getCheckinfoList()
+    {
+        return ['1' => __('显示'), '0' => __('隐藏')];
+    }
+
+
+    public function getCheckinfoTextAttr($value, $data)
+    {
+        $value = $value ? $value : (isset($data['checkinfo']) ? $data['checkinfo'] : '');
+        $list = $this->getCheckinfoList();
+        return isset($list[$value]) ? $list[$value] : '';
+    }
+
+
+
+
+
+}

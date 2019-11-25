@@ -29,6 +29,10 @@ class Index extends Frontend
                'logo'       =>Config::get('site.logo'),
                'hotline'    =>Config::get('site.hotline')
         ];
+        //首页banner图片
+        $banner = new \app\admin\model\Banner;
+        $bannerlist = $banner::where('checkinfo',1)->order('id desc')->select();
+        $this->assign('banner',$bannerlist);
         $this->assign('index',$index);
         $this->assign('top',$top);
         return $this->view->fetch();

@@ -57,44 +57,21 @@
         <div class="layout layout_auto" id="OneLine1489125299212">
             <div class="DragContainer" id="DragContainer1489125299212" starttop="198" startleft="343" startheight="518" startwidth="1143" overclass="OverDragContainer" dropobj="0">
                 <div class="DragBox" id="Item1489125305677" style="visibility: visible;" starttop="208" startleft="353" startheight="34" startwidth="1123" compid="homePageUpSelectionAd">
-
-
-
-
                     <!--banner切换-->
                     <div class="y_dqslides">
                         <div class="i_banner">
                             <!--平台首页大banner切换广告模块-->
                             <!--banner切换组件-->
-
                             <div class="flexslider">
                                 <ul class="slides">
-
-
+                                    {volist name='banner' id='vo'}
                                     <li>
-                                        <a href="http://www.700du.cn/front/product/toProduct/7fae64b79d9c4fc6bf26e0760c3d4302" target="_blank"><img src="__CDN__/assets/picture/0001138971.fid"/></a>
+                                        <a href="{$vo.linkurl}"><img src="__CDN__{$vo.pic}"/></a>
                                     </li>
-
-
-                                    <li>
-                                        <a href="http://www.700du.cn/front/product/toProduct/d792b8f789ab4dfa9c3e376f5e79cf33" target="_blank"><img src="__CDN__/assets/picture/0000990193.fid"/></a>
-                                    </li>
-
-
-                                    <li>
-                                        <a href="http://www.700du.cn/front/product/toProduct/d08615532ba549e796d7ed9555f120c9" target="_blank"><img src="__CDN__/assets/picture/0000991370.fid"/></a>
-                                    </li>
-
-
-                                    <li>
-                                        <a href="http://www.700du.cn/front/product/toProduct/cac095bcad09463c8a240569bfa9a323" target="_blank"><img src="__CDN__/assets/picture/0001014357.fid"/></a>
-                                    </li>
-
-
+                                    {/volist}
                                 </ul>
                             </div>
                         </div>
-
                         <!--- 平台首页大banner切换广告模块调用插件的js -->
                         <script>
                             $(function(){
@@ -108,7 +85,7 @@
                             });
                         </script>
                     </div>
-
+                    <!--banner切换结束-->
 
                 </div>
             </div>
@@ -117,16 +94,7 @@
             <div class="col_main">
                 <div class="DragContainer main_wrap" id="DragContainer1489125544653" starttop="727" startleft="343" startheight="505" startwidth="1143" overclass="OverDragContainer" dropobj="0">
                     <div class="DragBox" id="Item1489125556349" starttop="737" startleft="353" startheight="34" startwidth="1123" compid="homePageUpSCategory">
-
-
-
-
-
-
                         <div class="container floor floor-promotion">
-
-
-
                             <div class="fp-l">
                                 <a href="http://www.700du.cn/front/product/toProduct/17cf723df5b1495691b7d9ae79c3622c" target="_blank"><img src="__CDN__/assets/picture/0001017826.fid"></a>
                             </div>

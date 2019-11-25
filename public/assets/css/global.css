@@ -310,7 +310,7 @@ select.form-control option{padding:4px 12px;}
 .y_categorytree{position:relative}
 /*--- 分类树开始 ----*/
 .y_prudaltc{position:absolute;top:10px;left:0;width:220px;height:440px;background:#fff;z-index:999;}
-.y_prudaltc ul li{*zoom:1;padding-left: 20px;padding-right: 20px;border-bottom:1px solid #f0f0f0;border-right: 1px solid #e4e4e4;position: relative;}
+.y_prudaltc ul li{*zoom:1;padding-left: 20px;padding-right: 20px;border-bottom:1px solid #f0f0f0;border-right: 1px solid #e4e4e4;position: relative;height: 73px;}
 .y_prudaltc .y_pctreedl{position:relative;padding-left:2px;background:#fff;padding-bottom: 18px;padding-top: 15px;}
 .y_prudaltc .y_pctreedl dt{font:400 16px/18px "Microsoft Yahei";color:#666;height:29px; margin-left:1px;overflow:hidden;padding-top:10px;position:relative}
 .y_prudaltc .y_pctreedl .y_flpic{position:absolute;width:20px;height:20px;left:8px;top:8px;overflow:hidden}
