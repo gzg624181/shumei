@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:85:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\banner\index.html";i:1574735240;s:77:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\layout\default.html";i:1574656895;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\meta.html";i:1574656895;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\script.html";i:1574656895;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:100:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\example\tabletemplate\index.html";i:1574659640;s:77:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\layout\default.html";i:1574656895;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\meta.html";i:1574656895;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\script.html";i:1574656895;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -58,34 +58,65 @@
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
-                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>
-                        <a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('banner/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
-                        <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('banner/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
-                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('banner/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>
-                        <a href="javascript:;" class="btn btn-danger btn-import <?php echo $auth->check('banner/import')?'':'hide'; ?>" title="<?php echo __('Import'); ?>" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> <?php echo __('Import'); ?></a>
-
-                        <div class="dropdown btn-group <?php echo $auth->check('banner/multi')?'':'hide'; ?>">
-                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
-                            <ul class="dropdown-menu text-left" role="menu">
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
-                            </ul>
-                        </div>
-
-                        
+                        <?php echo build_toolbar('refresh,delete'); ?>
+                        <a class="btn btn-info btn-disabled disabled btn-selected" href="javascript:;"><i class="fa fa-leaf"></i> 获取选中项</a>
+                        <a class="btn btn-success btn-toggle-view" href="javascript:;"><i class="fa fa-leaf"></i> 切换视图</a>
                     </div>
-                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="<?php echo $auth->check('banner/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('banner/del'); ?>" 
-                           width="100%">
+                    <table id="table" class="table table-striped table-hover" width="100%">
+
                     </table>
+
                 </div>
             </div>
 
         </div>
     </div>
 </div>
+<style type="text/css">
+    .example {
+        height:100%;position: relative;
+    }
+    .example > span {
+        position:absolute;left:15px;top:15px;
+    }
+</style>
 
+<script id="itemtpl" type="text/html">
+    <!--
+    如果启用了templateView,默认调用的是itemtpl这个模板，可以通过设置templateFormatter来修改
+    在当前模板中可以使用三个变量(item:行数据,i:当前第几行,data:所有的行数据)
+    此模板引擎使用的是art-template的native,可参考官方文档
+    -->
+
+    <div class="col-sm-4 col-md-3">
+        <!--下面四行是为了展示随机图片和标签，可移除-->
+        <% var imagearr = ['https://cdn.fastadmin.net/uploads/addons/blog.png', 'https://cdn.fastadmin.net/uploads/addons/cms.png', 'https://cdn.fastadmin.net/uploads/addons/vote.png', 'https://cdn.fastadmin.net/uploads/addons/blog.png', 'https://cdn.fastadmin.net/uploads/addons/alisms.png']; %>
+        <% var image = imagearr[item.id % 5]; %>
+        <% var labelarr = ['primary', 'success', 'info', 'danger', 'warning']; %>
+        <% var label = labelarr[item.id % 5]; %>
+        <div class="thumbnail example">
+            <span class="btn btn-<%=label%>">ID:<%=item.id%></span>
+            <img src="<%=image%>" style="width:100%;" alt="<%=item.title%>">
+            <div class="caption">
+                <h4><%=item.title?item.title:'无'%></h4>
+                <p class="text-muted">操作者IP:<%=item.ip%></p>
+                <p class="text-muted">操作时间:<%=Moment(item.createtime*1000).format("YYYY-MM-DD HH:mm:ss")%></p>
+                <p>
+                    <!--详情的事件需要在JS中手动绑定-->
+                    <a href="#" class="btn btn-primary btn-success btn-detail" data-id="<%=item.id%>"><i class="fa fa-camera"></i> 详情</a> 
+
+                    <!--如果需要响应编辑或删除事件，可以给元素添加 btn-edit或btn-del的类和data-id这个属性值-->
+                    <a href="#" class="btn btn-primary btn-edit" data-id="<%=item.id%>"><i class="fa fa-pencil"></i> 编辑</a> 
+                    <a href="#" class="btn btn-danger btn-del" data-id="<%=item.id%>"><i class="fa fa-times"></i> 删除</a>
+                    <span class="pull-right" style="margin-top:10px;">
+                        <!--如果需要多选操作，请确保有下面的checkbox元素存在,可移除-->
+                        <input name="checkbox" data-id="<%=item.id%>" type="checkbox" />
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</script>
                             </div>
                         </div>
                     </div>

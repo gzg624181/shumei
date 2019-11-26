@@ -5,24 +5,26 @@ namespace app\admin\controller;
 use app\common\controller\Backend;
 
 /**
- * 轮播banner图片
+ * 产品管理
  *
  * @icon fa fa-circle-o
  */
-class Banner extends Backend
+class Goods extends Backend
 {
     
     /**
-     * Banner模型对象
-     * @var \app\admin\model\Banner
+     * Goods模型对象
+     * @var \app\admin\model\Goods
      */
     protected $model = null;
 
     public function _initialize()
     {
         parent::_initialize();
-        $this->model = new \app\admin\model\Banner;
-        $this->view->assign("checkinfoList", $this->model->getCheckinfoList());
+        $this->model = new \app\admin\model\Goods;
+        $this->view->assign("goodsStatusList", $this->model->getGoodsStatusList());
+        $this->view->assign("isDeleteList", $this->model->getIsDeleteList());
+        $this->view->assign("isindexList", $this->model->getIsindexList());
     }
     
     /**
@@ -50,21 +52,22 @@ class Banner extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['goods'])
+                    ->with(['category'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['goods'])
+                    ->with(['category'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                
-                $row->getRelation('goods')->visible(['goods_name']);
+                $row->visible(['id','goods_name','category_id','images','classess','price','sales_ku','sales_actual','goods_status','is_delete','isIndex']);
+                $row->visible(['category']);
+				$row->getRelation('category')->visible(['name']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

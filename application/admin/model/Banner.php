@@ -32,7 +32,7 @@ class Banner extends Model
     
     public function getCheckinfoList()
     {
-        return ['1' => __('显示'), '0' => __('隐藏')];
+        return ['1' => __('Checkinfo 1'), '0' => __('Checkinfo 0')];
     }
 
 
@@ -46,5 +46,8 @@ class Banner extends Model
 
 
 
-
+    public function goods()
+    {
+        return $this->belongsTo('Goods', 'goods_id', 'id', [], 'LEFT')->setEagerlyType(0);
+    }
 }

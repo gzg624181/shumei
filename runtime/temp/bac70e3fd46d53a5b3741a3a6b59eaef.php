@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:84:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\banner\edit.html";i:1574659006;s:77:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\layout\default.html";i:1574656895;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\meta.html";i:1574656895;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\script.html";i:1574656895;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:84:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\banner\edit.html";i:1574735240;s:77:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\layout\default.html";i:1574656895;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\meta.html";i:1574656895;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\script.html";i:1574656895;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -73,9 +73,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Linkurl'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Goods_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-linkurl" data-rule="required" class="form-control" name="row[linkurl]" type="text" value="<?php echo htmlentities($row['linkurl']); ?>">
+            <input id="c-goods_id" data-rule="required" data-source="goods/index" class="form-control selectpage" name="row[goods_id]" type="text" value="<?php echo htmlentities($row['goods_id']); ?>">
         </div>
     </div>
     <div class="form-group">
@@ -87,12 +87,12 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Checkinfo'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-                        
-            <select  id="c-checkinfo" data-rule="required" class="form-control selectpicker" name="row[checkinfo]">
-                <?php if(is_array($checkinfoList) || $checkinfoList instanceof \think\Collection || $checkinfoList instanceof \think\Paginator): if( count($checkinfoList)==0 ) : echo "" ;else: foreach($checkinfoList as $key=>$vo): ?>
-                    <option value="<?php echo $key; ?>" <?php if(in_array(($key), is_array($row['checkinfo'])?$row['checkinfo']:explode(',',$row['checkinfo']))): ?>selected<?php endif; ?>><?php echo $vo; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
+            
+            <div class="radio">
+            <?php if(is_array($checkinfoList) || $checkinfoList instanceof \think\Collection || $checkinfoList instanceof \think\Paginator): if( count($checkinfoList)==0 ) : echo "" ;else: foreach($checkinfoList as $key=>$vo): ?>
+            <label for="row[checkinfo]-<?php echo $key; ?>"><input id="row[checkinfo]-<?php echo $key; ?>" name="row[checkinfo]" type="radio" value="<?php echo $key; ?>" <?php if(in_array(($key), is_array($row['checkinfo'])?$row['checkinfo']:explode(',',$row['checkinfo']))): ?>checked<?php endif; ?> /> <?php echo $vo; ?></label> 
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
 
         </div>
     </div>
