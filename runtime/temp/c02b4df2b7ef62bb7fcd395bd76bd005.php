@@ -1,43 +1,129 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/index\view\index\qiye.html";i:1575021667;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\meta.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\online.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\landed.html";i:1574651412;}*/ ?>
 <!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    {include file="common/meta"}
+    <meta charset="utf-8">
+<title><?php echo (isset($index['title']) && ($index['title'] !== '')?$index['title']:''); ?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+<?php if(isset($index['keywords'])): ?>
+<meta name="keywords" content="<?php echo $index['keywords']; ?>">
+<?php endif; if(isset($index['description'])): ?>
+<meta name="description" content="<?php echo $index['description']; ?>">
+<?php endif; ?>
+<meta name="author" content="<?php echo (isset($index['author']) && ($index['author'] !== '')?$index['author']:''); ?>">
+<!-- Favicon and Apple Icons -->
+<link rel="shortcut icon" href="/shumei/public/assets/img/favicon.ico" />
+<link href="/shumei/public/assets/css/frontend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.css?v=<?php echo \think\Config::get('site.version'); ?>" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+  <script src="/shumei/public/assets/js/html5shiv.js"></script>
+  <script src="/shumei/public/assets/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    var require = {
+        config: <?php echo json_encode($config); ?>
+    };
+</script>
     <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
-    <link rel="stylesheet" href="__CDN__/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="__CDN__/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/font-awesome.min.css">
 
     <!-- 字体图标ie7兼容性处理 -->
     <!--[if lt IE 8]>
-    <link rel="stylesheet" href="__CDN__/assets/css/font-awesome-ie7.min.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/font-awesome-ie7.min.css">
     <![endif]-->
 
-    <link rel="stylesheet" href="__CDN__/assets/css/global.css">
-    <link rel="stylesheet" href="__CDN__/assets/css/index.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/global.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/index.css">
 
     <!--- jQuery -->
-    <script src="__CDN__/assets/js/jquery.min.js"></script>
-    <script src="__CDN__/assets/js/jquery.flexslider-min.js"></script>
-    <script src="__CDN__/assets/js/jquery.superslide.2.1.1.js"></script>
+    <script src="/shumei/public/assets/js/jquery.min.js"></script>
+    <script src="/shumei/public/assets/js/jquery.flexslider-min.js"></script>
+    <script src="/shumei/public/assets/js/jquery.superslide.2.1.1.js"></script>
     <!--[if lt IE 9]>
-    <script src="__CDN__/assets/js/respond.min.js"></script>
+    <script src="/shumei/public/assets/js/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
 <!-- 首页头部  -->
-<link rel="stylesheet" href="__CDN__/assets/css/rightsuspension.css">
-<script src="__CDN__/assets/js/ajaxcart.js"></script>
+<link rel="stylesheet" href="/shumei/public/assets/css/rightsuspension.css">
+<script src="/shumei/public/assets/js/ajaxcart.js"></script>
 
 <!-- Validation 表单验证插件-->
-<script src="__CDN__/assets/js/jquery.validate.min.js"></script>
-<script src="__CDN__/assets/js/md5.js"></script>
+<script src="/shumei/public/assets/js/jquery.validate.min.js"></script>
+<script src="/shumei/public/assets/js/md5.js"></script>
 
 <!--侧栏点击 联系客服，意见建议，回到顶部-->
-{include file="common/online"}
+<!--新版返回顶部-->
+<div class="online-wrap">
+    <div class="online-fixed">
+        <div class="online-tool online-tool-1" onclick="openCustomerService()">
+        </div>
+        <div class="online-tool online-tool-2">
+            <div class="r_wrap" style="display: none;">
+                <span class="ot-sjx"></span>
+                <div class="online-unfold ou-w1">
+                    <div class="flol">
+                        <img src="/shumei/public/assets/picture/online-tool-sj.png">
+                        <p class="ou-txt">700度手机版</p>
+                    </div>
+                    <div class="flor">
+                        <img src="/shumei/public/assets/picture/online-tool-wx.png">
+                        <p class="ou-txt">700度微信公众号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="online-tool online-tool-3" onclick="openCustomerService()">
+        </div>
+        <div class="online-tool online-tool-4">
+            &nbsp;
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.online-tool').each(function() {
+        $(this).hover(
+            function() {
+                $(this).find('.r_wrap').stop(true, true).show(200)
+            },
+            function() {
+                $(this).find('.r_wrap').stop(true, true).hide(200)
+            });
+    });
+    //返回顶部
+    //返回顶部js
+    $(".online-tool-4").click(function(){
+        $("html,body").animate({scrollTop:'0px'},300);
+    });
+    //点击客服
+    function openCustomerService(){
+        window.open("http://v1.live800.com/live800/chatClient/chatbox.jsp?companyID=776940&configID=43779&jid=1902871801");
+    }
+</script>
 <!--登陆状态/未登录状态切换-->
-{include file="common/landed"}
+<!--已登录状态-->
+<div class="header-top">
+    <div class="container">
+        <div class="fl">
+            <span class="index_home"><a href="/" title="700du"><i class="fa fa-home"></i> 700度首页</a></span>
+        </div><!-- End .header-top-left -->
+        <ul class="fr">
+            <li class="y_headrli">
+                <span id="isLogin">您好，欢迎来到700度！<a href="/customer/toIndex">蒋美美</a>&nbsp;<a href="/customer/logout">退出</a></span>
+            </li><li class="y_headrli"><a class="y_plr10" href="/usercenter/order/list/1/1/10?init=true" target="_blank">我的订单</a> | </li>
+            <li class="y_headrli"><a class="y_plr10" href="/customer/toIndex" target="_blank">会员中心</a> | </li>
+            <!--700度系统把未艾相关的链接都隐藏掉（因监管）
+             <li class="y_headrli"><a class="y_plr10" href="http://jyk.700du.cn/shop.shtml?option=jh" target="_blank">服务卡</a> | </li> -->
+            <li class="y_headrli"><span class="y_mlr5">客服电话：<strong class="phone"><?php echo $top['hotline']; ?></strong></span></li>
+        </ul><!-- End .header-top-right -->
+    </div><!-- End .container -->
+</div>
 
 <!-- 头部面包屑 -->
 
@@ -60,7 +146,7 @@
                 <div class="main-serch-container">
                     <div class="container">
                         <h1 class="y_logo">
-                            <a href="/" title="700du"><img src="__CDN__/assets/picture/0000020092_1.fid"></a>
+                            <a href="/" title="700du"><img src="/shumei/public/assets/picture/0000020092_1.fid"></a>
 
                         </h1>
                         <!--nav start-->
@@ -101,7 +187,7 @@
 
                                         帮助中心
 
-                                        <span><img src="__CDN__/assets/picture/help5_1.gif"></span>
+                                        <span><img src="/shumei/public/assets/picture/help5_1.gif"></span>
 
                                     </a>
                                 </li>
@@ -170,17 +256,17 @@
 
 
                         <li >
-                            <a href="https://www.700du.cn/group700duTuanYi/productList?position=2"><img src="__CDN__/assets/picture/0000025957.fid"/></a>
+                            <a href="https://www.700du.cn/group700duTuanYi/productList?position=2"><img src="/shumei/public/assets/picture/0000025957.fid"/></a>
                         </li>
 
 
                         <li >
-                            <a href="https://www.700du.cn/yangguangguzhu/guZhuProductList?position=2"><img src="__CDN__/assets/picture/0000025958.fid"/></a>
+                            <a href="https://www.700du.cn/yangguangguzhu/guZhuProductList?position=2"><img src="/shumei/public/assets/picture/0000025958.fid"/></a>
                         </li>
 
 
                         <li >
-                            <a href="https://www.700du.cn/group700duBusinessInsurance/productList?position=2"><img src="__CDN__/assets/picture/0000119260.fid"/></a>
+                            <a href="https://www.700du.cn/group700duBusinessInsurance/productList?position=2"><img src="/shumei/public/assets/picture/0000119260.fid"/></a>
                         </li>
 
 
@@ -413,7 +499,7 @@
 
 
 
-                        <div class="y_contact fl" style="border: medium none; padding-left: 0px;"><img src="__CDN__/assets/picture/0000067337_1.fid" title="201704141357193743145036559.png" alt="201704141357193743145036559.png"/></div>
+                        <div class="y_contact fl" style="border: medium none; padding-left: 0px;"><img src="/shumei/public/assets/picture/0000067337_1.fid" title="201704141357193743145036559.png" alt="201704141357193743145036559.png"/></div>
 
                     </div>
                 </div>
@@ -453,12 +539,12 @@
 
 
 
-<link rel="stylesheet" href="__CDN__/assets/css/rightsuspension_1.css">
-<script src="__CDN__/assets/js/ajaxcart_1.js"></script>
+<link rel="stylesheet" href="/shumei/public/assets/css/rightsuspension_1.css">
+<script src="/shumei/public/assets/js/ajaxcart_1.js"></script>
 
 <!-- Validation 表单验证插件-->
-<script src="__CDN__/assets/js/jquery.validate.min_1.js"></script>
-<script src="__CDN__/assets/js/md5_1.js"></script>
+<script src="/shumei/public/assets/js/jquery.validate.min_1.js"></script>
+<script src="/shumei/public/assets/js/md5_1.js"></script>
 <!--新版返回顶部-->
 <div class="online-wrap">
     <div class="online-fixed">
@@ -470,11 +556,11 @@
                 <span class="ot-sjx"></span>
                 <div class="online-unfold ou-w1">
                     <div class="flol">
-                        <img src="__CDN__/assets/picture/online-tool-sj_1.png">
+                        <img src="/shumei/public/assets/picture/online-tool-sj_1.png">
                         <p class="ou-txt">700度手机版</p>
                     </div>
                     <div class="flor">
-                        <img src="__CDN__/assets/picture/online-tool-wx_1.png">
+                        <img src="/shumei/public/assets/picture/online-tool-wx_1.png">
                         <p class="ou-txt">700度微信公众号</p>
                     </div>
                 </div>
@@ -537,11 +623,11 @@ var _hmt = _hmt || [];
 			<div class="y_userbox">
 				<div class="y_rtbtn y_userbtn" ><i class="fa fa-user"></i></div>
 				会员已登陆状态
-				<div class="y_rtbtn y_userbtn add-tooltip"><a class="y_pic add-tooltip" href="#" data-toggle="tooltip" data-placement="left" title="全网会员名"><img src="__CDN__/assets/picture/user2_1.png"></a></div>
+				<div class="y_rtbtn y_userbtn add-tooltip"><a class="y_pic add-tooltip" href="#" data-toggle="tooltip" data-placement="left" title="全网会员名"><img src="/shumei/public/assets/picture/user2_1.png"></a></div>
 			</div>
 
 			<div class="add-tooltip" data-toggle="tooltip" data-placement="left" style="cursor:pointer;background:#000;position: absolute;bottom: 140px;left: 0" title="联系客服">
-	            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3460227840&site=qq&menu=yes"><img src="__CDN__/assets/picture/qqservice_1.png" style="width: 35px;"></a>
+	            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3460227840&site=qq&menu=yes"><img src="/shumei/public/assets/picture/qqservice_1.png" style="width: 35px;"></a>
             </div>
 
 			<div class="y_rtbtn y_rtlove add-tooltip" data-toggle="tooltip" data-placement="left" title="我的收藏"></div>
@@ -578,7 +664,7 @@ var _hmt = _hmt || [];
 	</div>
 
 	</div>
-	<script type="text/javascript" charset="utf-8" src="__CDN__/assets/js/10053757_1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/shumei/public/assets/js/10053757_1.js"></script>
 <script>
 
 		$(function(){
@@ -716,7 +802,7 @@ $(".y_userbtn").click(function() {
 						$(".alert").html("用户名或者密码错误!");
 						$("#hasVilidateCode").val("true");
 						$("#validateCodediv").css("display","block");
-						$("#code").html('<span class="y_rdltit">验证码</span><div class="y_yzgrup"><input type="text" class="form-control" id="validateCode" name="validateCode" value=""><img id="validateImg" src="__CDN__/assets/picture/253569a999164b8993c82cb73f8094ba.gif" onClick="javascript:flushValidateCode();"/><span><span>看不清？<a href="javascript:flushValidateCode();" class="f_color2">换一张</a></span></span></div>');
+						$("#code").html('<span class="y_rdltit">验证码</span><div class="y_yzgrup"><input type="text" class="form-control" id="validateCode" name="validateCode" value=""><img id="validateImg" src="/shumei/public/assets/picture/253569a999164b8993c82cb73f8094ba.gif" onClick="javascript:flushValidateCode();"/><span><span>看不清？<a href="javascript:flushValidateCode();" class="f_color2">换一张</a></span></span></div>');
 					}else if(data == "success"){
 						$.getJSON("/customer/isLogin",
 								function(data) {
@@ -765,7 +851,7 @@ $(".y_userbtn").click(function() {
 						$(".alert").show();
 						$(".alert").html("用户名或者密码错误!");
 						$("#hasVilidateCode").val("true");
-						$("#code").html('<span class="y_rdltit">验证码</span><div class="y_yzgrup"><input type="text" class="form-control" id="validateCode1" name="validateCode" value=""><img id="validateImg" src="__CDN__/assets/picture/253569a999164b8993c82cb73f8094ba.gif" onClick="javascript:flushValidateCode();"/><span><span>看不清？<a href="javascript:flushValidateCode();" class="f_color2">换一张</a></span></span></div>');
+						$("#code").html('<span class="y_rdltit">验证码</span><div class="y_yzgrup"><input type="text" class="form-control" id="validateCode1" name="validateCode" value=""><img id="validateImg" src="/shumei/public/assets/picture/253569a999164b8993c82cb73f8094ba.gif" onClick="javascript:flushValidateCode();"/><span><span>看不清？<a href="javascript:flushValidateCode();" class="f_color2">换一张</a></span></span></div>');
 					}else if(data == "success"){
 						$.getJSON("/customer/isLogin",
 								function(data) {
@@ -805,8 +891,8 @@ $(".y_userbtn").click(function() {
 		</script> -->
 <!-- END -->
 
-<script src="__CDN__/assets/js/bootstrap_1.js"></script>
-<script src="__CDN__/assets/js/aebiz_global-0.1_1.js"></script>
+<script src="/shumei/public/assets/js/bootstrap_1.js"></script>
+<script src="/shumei/public/assets/js/aebiz_global-0.1_1.js"></script>
 <script>
     function collectStore(storeUuid){
         var loginUrl = "/front/productList/isLogin"

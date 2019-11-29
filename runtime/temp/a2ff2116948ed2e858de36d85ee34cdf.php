@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:84:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/index\view\index\index.html";i:1574665314;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\meta.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\online.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\landed.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\header.html";i:1574651412;s:73:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\tag.html";i:1574651412;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:8:{s:84:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/index\view\index\index.html";i:1575018644;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\meta.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\online.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\landed.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\header.html";i:1574651412;s:73:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\tag.html";i:1574651412;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\help.html";i:1575018524;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\footer.html";i:1575021146;}*/ ?>
 <!doctype html>
 <html>
 <head>
@@ -196,7 +196,7 @@
     </script>
 </div>
                     <!--banner导航-->
-                    <div class="container">
+                    <!--<div class="container">
     <div id="main-nav" class="y_categorytree">
         <div class="y_prudaltc">
             <ul>
@@ -806,7 +806,7 @@
     },function(){
         $(this).children(".y_twotc").hide()
     });
-</script>
+</script>-->
                 </div>
             </div>
         </div>
@@ -823,7 +823,7 @@
                                 <ul class="slides">
                                     <?php if(is_array($banner) || $banner instanceof \think\Collection || $banner instanceof \think\Paginator): $i = 0; $__LIST__ = $banner;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                     <li>
-                                        <a href="<?php echo $vo['linkurl']; ?>"><img src="/shumei/public<?php echo $vo['pic']; ?>"/></a>
+                                        <a href="<?php echo $vo['goods_id']; ?>"><img src="/shumei/public<?php echo $vo['pic']; ?>"/></a>
                                     </li>
                                     <?php endforeach; endif; else: echo "" ;endif; ?>
                                 </ul>
@@ -1638,16 +1638,6 @@
             <div class="DragContainer col_sidebar" id="DragContainer14891256493132" starttop="1306" startleft="343" startheight="164" startwidth="285" overclass="OverDragContainer" dropobj="0">
                 <div class="DragBox" id="Item1489544254410" starttop="1316" startleft="353" startheight="34" startwidth="265" compid="homePageUpFloorLeft">
 
-
-
-
-
-
-
-
-
-
-
                     <div class="y_catatit"><h2><strong>健康险</strong></h2></div><!--楼层标题 end-->
                     <div class="DragBox">
                         <!--楼层左广告组件-->
@@ -1677,225 +1667,13 @@
                             </div>
                             <div class="bd">
                                 <div class="company-list clearfix">
-
-
-
-
+                                <?php if(is_array($partners) || $partners instanceof \think\Collection || $partners instanceof \think\Paginator): $i = 0; $__LIST__ = $partners;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                     <li class="company-item fl">
-                                        <a href="http://www.700du.cn/front/productList/toStoreProductList" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025761.fid" alt="">
+                                        <a href="javascript:;" title="<?php echo $vo['title']; ?>">
+                                            <img src="/shumei/public<?php echo $vo['image']; ?>" alt="">
                                         </a>
                                     </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025759.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025758.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="http://www.700du.cn/front/productList/toStoreProductList?keyword=%25E6%25B3%25B0%25E5%25BA%25B7%25E5%259C%25A8%25E7%25BA%25BF" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025756.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025749.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025751.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025752.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025753.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025747.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025746.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025745.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025744.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025743.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000111022.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000111027.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000111026.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000111025.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000111023.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000025750.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000111083.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0000111082.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017897.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017896.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017895.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017802.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017793.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017652.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017667.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017666.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017664.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017657.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="/shumei/public/assets/picture/0001017653.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
+                                <?php endforeach; endif; else: echo "" ;endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -1915,93 +1693,37 @@
             <div class="col_main">
                 <div class="DragContainer main_wrap" id="DragContainer1489126407204" starttop="2489" startleft="343" startheight="406" startwidth="1143" overclass="OverDragContainer" dropobj="0">
                     <div class="DragBox" id="Item1489126425347" starttop="2499" startleft="353" startheight="34" startwidth="1123" compid="homePageUpMessage">
-
                         <!--资讯-->
                         <div class="layout grid_m0">
-                            <div class="y_catatit"><h2><strong>资讯</strong></h2></div>
+                            <div class="y_catatit"><h2><strong>新闻资讯</strong></h2></div>
                             <div class="box-bd">
                                 <ul class="news-list clearfix">
-
+                                <?php if(is_array($news) || $news instanceof \think\Collection || $news instanceof \think\Paginator): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                     <li class="news-item">
                                         <div class="figure figure-img">
-                                            <a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/40a7822a423545a19e4e15cdfff8168f?categoryUuid=fe5be8e2f1164554947e80c48c4741f0" target="_blank" ><img src="/shumei/public/assets/picture/0000004045.fid">
+                                            <a href="<?php echo url('newscontent',['id'=>$vo['id']]); ?>" >
+                                                <img src="/shumei/public<?php echo $vo['image']; ?>">
                                                 <span class="recom">
 								  	<img src="/shumei/public/assets/picture/recommend_ico.png">
 								  </span>
                                             </a>
                                         </div>
-                                        <h3 class="title">明亚优选寿险发布会 </h3>
-                                        <p class="desc">升级优选，引领行业风潮</p>
+                                        <h3 class="title"><?php echo $vo['title']; ?> </h3>
+                                        <p class="desc"><?php echo $vo['keyword']; ?></p>
                                     </li>
-
-                                    <li class="news-item">
-                                        <div class="figure figure-img">
-                                            <a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/6ec71e10964f4fa58507a1332e991315?categoryUuid=fe5be8e2f1164554947e80c48c4741f0" target="_blank" ><img src="/shumei/public/assets/picture/0000004061.fid">
-                                                <span class="recom">
-								  	<img src="/shumei/public/assets/picture/recommend_ico.png">
-								  </span>
-                                            </a>
-                                        </div>
-                                        <h3 class="title"> 医保全国联网要来了</h3>
-                                        <p class="desc">我国养老保险延迟退休方案将适时推出</p>
-                                    </li>
-
-                                    <li class="news-item">
-                                        <div class="figure figure-img">
-                                            <a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/71b593a6ab6f400589e4ce2500673f15?categoryUuid=fe5be8e2f1164554947e80c48c4741f0" target="_blank" ><img src="/shumei/public/assets/picture/0000004063.fid">
-                                                <span class="recom">
-								  	<img src="/shumei/public/assets/picture/recommend_ico.png">
-								  </span>
-                                            </a>
-                                        </div>
-                                        <h3 class="title">2016保险理赔数据分析</h3>
-                                        <p class="desc">数据显示，理赔难已成往事？</p>
-                                    </li>
-
-                                    <li class="news-item">
-                                        <div class="figure figure-img">
-                                            <a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/fc5e7cfbb8b14092b09e23d0425f256f?categoryUuid=fe5be8e2f1164554947e80c48c4741f0" target="_blank" ><img src="/shumei/public/assets/picture/0000004044.fid">
-                                                <span class="recom">
-								  	<img src="/shumei/public/assets/picture/recommend_ico.png">
-								  </span>
-                                            </a>
-                                        </div>
-                                        <h3 class="title">第三套生命表</h3>
-                                        <p class="desc">第三套生命表2017启用，保费是涨是跌？</p>
-                                    </li>
-
+                                <?php endforeach; endif; else: echo "" ;endif; ?>
                                 </ul>
                             </div>
                         </div>
                         <!--资讯 end-->
-
                     </div>
                 </div>
             </div>
         </div>
-        <div class="layout layout_auto" id="OneLine1489126586325">
-            <div class="DragContainer" id="DragContainer1489126586325" starttop="2906" startleft="343" startheight="54" startwidth="1143" overclass="OverDragContainer" dropobj="0">
-            </div>
-        </div>
-        <div class="layout " id="OneLine1491382186986" oldid="OneLine1491382186986">
-            <div class="col_main">
-                <div class="DragContainer main_wrap" id="DragContainer1491382186986" starttop="2971" startleft="343" startheight="54" startwidth="1143" overclass="OverDragContainer" dropobj="0">
-                </div>
-            </div>
-        </div>
-        <div class="layout">
-            <div class="DragContainer drag_footer" id="DragContainer6" starttop="3099" startleft="343" startheight="81" startwidth="1143" overclass="OverDragContainer drag_footer" dropobj="0">
-            </div>
-        </div>
     </div>
 </div>
-<!-- 引入登录弹出框 -->
 
-<!-- 加入收藏弹出框 -->
-<div class="modal fade y_suscollect" id="modal-collect-form" tabindex="-1" role="dialog">
-</div><!-- End 加入收藏弹出框 -->
 <!--平台底部帮助中心-->
-
 <!--平台底部帮助中心组件-->
 <div class="layout layout_auto y_minwid">
     <div class="DragContainer">
@@ -2076,12 +1798,21 @@
         </div><!--底部帮助中心-->
     </div>
 </div><!--平台底部帮助中心组件 end-->
-<!--底部-->
+<!--平台底部帮助中心end-->
 <!--底部-->
 <div class="footer-bgdark">
     <div class="container">
-        <div><div class="container footer-friendlink footer-friendlinkborn"><div class="f_link f_linkcfff"><p style="text-align:center;color:#fff;">友情链接：<a href="http://www.circ.gov.cn/web/site0/" target="_blank">中国保监会</a><a href="http://www.iachina.cn" target="_blank">中国保险行业协会</a><a href="http://finance.qq.com/money/insurance.htm" target="_blank">腾讯保险</a><a href="http://finance.sina.com.cn/money/insurance/" target="_blank">新浪保险</a><a href="http://insurance.jrj.com.cn/" target="_blank">金融界保险</a><a href="http://finance.ce.cn/" target="_blank">中国经济网财经</a><a href="http://www.ibaodian.com/" target="_blank">随身保典</a><a href="http://finance.ifeng.com/" target="_blank">凤凰财经</a><a href="http://www.china-insurance.com/" target="_blank">中国保险网</a><a href="https://700du.tmall.com" target="_blank">明亚天猫旗舰店</a><a href="https://www.bao361.cn/" target="_blank">保险管家</a></p></div></div><div class="site-info" style="padding-bottom:25px;"><div class="container"><div class="info-text" style="color:#fff;text-align:center;line-height:2.4;padding-top:0;"><p>Copyright © 2015 - 2020 700度版权所有 京ICP证150775号<br/><a style="color:#fff" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502031698" target="_blank">京公网安备 11010502031698号</a> | 未经许可不得转载</p></div></div></div></div><!--底部商城资讯 end--><!--%@-->
+        <div><div class="container footer-friendlink footer-friendlinkborn">
+            <div class="f_link f_linkcfff"><p style="text-align:center;color:#fff;">友情链接：
+                <?php if(is_array($footer['link']) || $footer['link'] instanceof \think\Collection || $footer['link'] instanceof \think\Paginator): $i = 0; $__LIST__ = $footer['link'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                <a href="<?php echo $vo['lnkurl']; ?>" target="_blank"><?php echo $vo['lnkname']; ?></a>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+            </p></div></div>
+            <div class="site-info" style="padding-bottom:25px;">
+                <div class="container"><div class="info-text" style="color:#fff;text-align:center;line-height:2.4;padding-top:0;"><p><?php echo $footer['copyright']; ?><br/>
+                    <?php echo $footer['icp']; ?> | 未经许可不得转载</p></div></div></div></div><!--底部商城资讯 end--><!--%@-->
     </div><!-- End .container -->
-</div><!-- End #footer-bottom -->
+</div>
+<!-- End #footer-bottom -->
 </body>
 </html>

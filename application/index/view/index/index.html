@@ -49,7 +49,7 @@
                     <!-- 首页common 导航 -->
                     {include file="common/header"}
                     <!--banner导航-->
-                    {include file="common/tag"}
+                    <!--{include file="common/tag"}-->
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
                                 <ul class="slides">
                                     {volist name='banner' id='vo'}
                                     <li>
-                                        <a href="{$vo.linkurl}"><img src="__CDN__{$vo.pic}"/></a>
+                                        <a href="{$vo.goods_id}"><img src="__CDN__{$vo.pic}"/></a>
                                     </li>
                                     {/volist}
                                 </ul>
@@ -881,16 +881,6 @@
             <div class="DragContainer col_sidebar" id="DragContainer14891256493132" starttop="1306" startleft="343" startheight="164" startwidth="285" overclass="OverDragContainer" dropobj="0">
                 <div class="DragBox" id="Item1489544254410" starttop="1316" startleft="353" startheight="34" startwidth="265" compid="homePageUpFloorLeft">
 
-
-
-
-
-
-
-
-
-
-
                     <div class="y_catatit"><h2><strong>健康险</strong></h2></div><!--楼层标题 end-->
                     <div class="DragBox">
                         <!--楼层左广告组件-->
@@ -920,225 +910,13 @@
                             </div>
                             <div class="bd">
                                 <div class="company-list clearfix">
-
-
-
-
+                                {volist name="partners" id="vo"}
                                     <li class="company-item fl">
-                                        <a href="http://www.700du.cn/front/productList/toStoreProductList" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025761.fid" alt="">
+                                        <a href="javascript:;" title="{$vo.title}">
+                                            <img src="__CDN__{$vo.image}" alt="">
                                         </a>
                                     </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025759.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025758.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="http://www.700du.cn/front/productList/toStoreProductList?keyword=%25E6%25B3%25B0%25E5%25BA%25B7%25E5%259C%25A8%25E7%25BA%25BF" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025756.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025749.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025751.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025752.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025753.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025747.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025746.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025745.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025744.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025743.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000111022.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000111027.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000111026.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000111025.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000111023.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000025750.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000111083.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0000111082.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017897.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017896.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017895.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017802.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017793.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017652.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017667.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017666.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017664.fid" alt="">
-                                        </a>
-                                    </li>
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017657.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
-                                    <li class="company-item fl">
-                                        <a href="" title="" target="_blank">
-                                            <img src="__CDN__/assets/picture/0001017653.fid" alt="">
-                                        </a>
-                                    </li>
-
-
-
+                                {/volist}
                                 </div>
                             </div>
                         </div>
@@ -1158,173 +936,41 @@
             <div class="col_main">
                 <div class="DragContainer main_wrap" id="DragContainer1489126407204" starttop="2489" startleft="343" startheight="406" startwidth="1143" overclass="OverDragContainer" dropobj="0">
                     <div class="DragBox" id="Item1489126425347" starttop="2499" startleft="353" startheight="34" startwidth="1123" compid="homePageUpMessage">
-
                         <!--资讯-->
                         <div class="layout grid_m0">
-                            <div class="y_catatit"><h2><strong>资讯</strong></h2></div>
+                            <div class="y_catatit"><h2><strong>新闻资讯</strong></h2></div>
                             <div class="box-bd">
                                 <ul class="news-list clearfix">
-
+                                {volist name="news" id="vo"}
                                     <li class="news-item">
                                         <div class="figure figure-img">
-                                            <a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/40a7822a423545a19e4e15cdfff8168f?categoryUuid=fe5be8e2f1164554947e80c48c4741f0" target="_blank" ><img src="__CDN__/assets/picture/0000004045.fid">
+                                            <a href="{:url('newscontent',['id'=>$vo.id])}" >
+                                                <img src="__CDN__{$vo.image}">
                                                 <span class="recom">
 								  	<img src="__CDN__/assets/picture/recommend_ico.png">
 								  </span>
                                             </a>
                                         </div>
-                                        <h3 class="title">明亚优选寿险发布会 </h3>
-                                        <p class="desc">升级优选，引领行业风潮</p>
+                                        <h3 class="title">{$vo.title} </h3>
+                                        <p class="desc">{$vo.keyword}</p>
                                     </li>
-
-                                    <li class="news-item">
-                                        <div class="figure figure-img">
-                                            <a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/6ec71e10964f4fa58507a1332e991315?categoryUuid=fe5be8e2f1164554947e80c48c4741f0" target="_blank" ><img src="__CDN__/assets/picture/0000004061.fid">
-                                                <span class="recom">
-								  	<img src="__CDN__/assets/picture/recommend_ico.png">
-								  </span>
-                                            </a>
-                                        </div>
-                                        <h3 class="title"> 医保全国联网要来了</h3>
-                                        <p class="desc">我国养老保险延迟退休方案将适时推出</p>
-                                    </li>
-
-                                    <li class="news-item">
-                                        <div class="figure figure-img">
-                                            <a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/71b593a6ab6f400589e4ce2500673f15?categoryUuid=fe5be8e2f1164554947e80c48c4741f0" target="_blank" ><img src="__CDN__/assets/picture/0000004063.fid">
-                                                <span class="recom">
-								  	<img src="__CDN__/assets/picture/recommend_ico.png">
-								  </span>
-                                            </a>
-                                        </div>
-                                        <h3 class="title">2016保险理赔数据分析</h3>
-                                        <p class="desc">数据显示，理赔难已成往事？</p>
-                                    </li>
-
-                                    <li class="news-item">
-                                        <div class="figure figure-img">
-                                            <a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/fc5e7cfbb8b14092b09e23d0425f256f?categoryUuid=fe5be8e2f1164554947e80c48c4741f0" target="_blank" ><img src="__CDN__/assets/picture/0000004044.fid">
-                                                <span class="recom">
-								  	<img src="__CDN__/assets/picture/recommend_ico.png">
-								  </span>
-                                            </a>
-                                        </div>
-                                        <h3 class="title">第三套生命表</h3>
-                                        <p class="desc">第三套生命表2017启用，保费是涨是跌？</p>
-                                    </li>
-
+                                {/volist}
                                 </ul>
                             </div>
                         </div>
                         <!--资讯 end-->
-
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="layout layout_auto" id="OneLine1489126586325">
-            <div class="DragContainer" id="DragContainer1489126586325" starttop="2906" startleft="343" startheight="54" startwidth="1143" overclass="OverDragContainer" dropobj="0">
-            </div>
-        </div>
-        <div class="layout " id="OneLine1491382186986" oldid="OneLine1491382186986">
-            <div class="col_main">
-                <div class="DragContainer main_wrap" id="DragContainer1491382186986" starttop="2971" startleft="343" startheight="54" startwidth="1143" overclass="OverDragContainer" dropobj="0">
-                </div>
-            </div>
-        </div>
-        <div class="layout">
-            <div class="DragContainer drag_footer" id="DragContainer6" starttop="3099" startleft="343" startheight="81" startwidth="1143" overclass="OverDragContainer drag_footer" dropobj="0">
             </div>
         </div>
     </div>
 </div>
-<!-- 引入登录弹出框 -->
 
-<!-- 加入收藏弹出框 -->
-<div class="modal fade y_suscollect" id="modal-collect-form" tabindex="-1" role="dialog">
-</div><!-- End 加入收藏弹出框 -->
 <!--平台底部帮助中心-->
-
-<!--平台底部帮助中心组件-->
-<div class="layout layout_auto y_minwid">
-    <div class="DragContainer">
-        <div class="DragBox">
-            <!--底部帮助中心-->
-            <div class="footer inner-footer">
-                <div class="container">
-                    <div class="y_fotcont clearfix">
-                        <dl class="width12">
-                            <dt>新手指南</dt>
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/966890616d9848ac96b013fd2904ba39?position=3" target="_blank" >保险资讯</a></dd>
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/e0e8d6d276ea41d4a315da656a2f1e93?position=3" target="_blank" >如何筛选产品</a></dd>
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/8fa164d134f74a3096b6688eaf7bfaa6?position=3" target="_blank" >如何登入</a></dd>
-
-                        </dl>
-
-                        <dl class="width12">
-                            <dt>投保指南</dt>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/d88c77145b794a8aac412a51a7f0bd3f?position=3" target="_blank" >如何投保</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/e522baaf2cf9413998a5af7b791f8c84?position=3" target="_blank" >支付说明</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/e941aabdcc984666b26108f0354b060b?position=3" target="_blank" >投保常见问题</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/91015dfe094e4c4eb960056abec7707b?position=3" target="_blank" >订单查看</a></dd>
-
-                        </dl>
-
-                        <dl class="width12">
-                            <dt>服务支持</dt>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/a9c5e201c7ec415693317fe7d515b6cb?position=3" target="_blank" >信息披露</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/bb3b54a8370f4b2ba88f6e5dfa4d8dd1?position=3" target="_blank" >保全服务</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/7d0bcea005414fb395c8872684d5a7c6?position=3" target="_blank" >保单服务</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/d60ab42d1c424843aec6781e27a1cada?position=3" target="_blank" >发票服务</a></dd>
-
-                        </dl>
-
-                        <dl class="width12">
-                            <dt>理赔服务</dt>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/dedf53c6083f463799f2072ebb7174d8?position=3" target="_blank" >申请理赔</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/1744462c0b9f4e7587c14114764f49e5?position=3" target="_blank" >理赔进度</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/9a7e1efbee58460e9e0b962a13f996ef?position=3" target="_blank" >理赔案例</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/e657e2edd1df4381995104c311eb6685?position=3" target="_blank" >常见理赔问题</a></dd>
-
-                        </dl>
-
-                        <dl class="width12">
-                            <dt>平台介绍</dt>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/c4e121cbd9b04c59b28f5ef8db2846e0?position=3" target="_blank" >隐私保护</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/1570e03bb20b40ffa6d9bd66d3d26125?position=3" target="_blank" >关于700度</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/48b6f1327f934dcfafe54dd1e48438bd?position=3" target="_blank" >联系我们</a></dd>
-
-                            <dd><a href="/frontshow/content/help/BottomHelpCenter75bdafe2bc4e4ff1a0a1afe6cf26b467/1a876c16c42c4ea484c19eec0180d94b?position=3" target="_blank" >投诉建议</a></dd>
-                        </dl>
-                        <div class="y_contact fl" style="border: medium none; padding-left: 0px;"><img src="__CDN__/assets/picture/0000067337.fid" title="201704141357193743145036559.png" alt="201704141357193743145036559.png"/></div>
-
-                    </div>
-                </div>
-            </div><!-- End .container -->
-        </div><!--底部帮助中心-->
-    </div>
-</div><!--平台底部帮助中心组件 end-->
+{include file="common/help"}
+<!--平台底部帮助中心end-->
 <!--底部-->
-<!--底部-->
-<div class="footer-bgdark">
-    <div class="container">
-        <div><div class="container footer-friendlink footer-friendlinkborn"><div class="f_link f_linkcfff"><p style="text-align:center;color:#fff;">友情链接：<a href="http://www.circ.gov.cn/web/site0/" target="_blank">中国保监会</a><a href="http://www.iachina.cn" target="_blank">中国保险行业协会</a><a href="http://finance.qq.com/money/insurance.htm" target="_blank">腾讯保险</a><a href="http://finance.sina.com.cn/money/insurance/" target="_blank">新浪保险</a><a href="http://insurance.jrj.com.cn/" target="_blank">金融界保险</a><a href="http://finance.ce.cn/" target="_blank">中国经济网财经</a><a href="http://www.ibaodian.com/" target="_blank">随身保典</a><a href="http://finance.ifeng.com/" target="_blank">凤凰财经</a><a href="http://www.china-insurance.com/" target="_blank">中国保险网</a><a href="https://700du.tmall.com" target="_blank">明亚天猫旗舰店</a><a href="https://www.bao361.cn/" target="_blank">保险管家</a></p></div></div><div class="site-info" style="padding-bottom:25px;"><div class="container"><div class="info-text" style="color:#fff;text-align:center;line-height:2.4;padding-top:0;"><p>Copyright © 2015 - 2020 700度版权所有 京ICP证150775号<br/><a style="color:#fff" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502031698" target="_blank">京公网安备 11010502031698号</a> | 未经许可不得转载</p></div></div></div></div><!--底部商城资讯 end--><!--%@-->
-    </div><!-- End .container -->
-</div><!-- End #footer-bottom -->
+{include file="common/footer"}
+<!-- End #footer-bottom -->
 </body>
 </html>
