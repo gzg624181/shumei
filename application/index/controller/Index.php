@@ -41,7 +41,7 @@ class Index extends Frontend
      */
     public function qiye()
     {
-
+        $this->assign('common',self::common());
         return $this->view->fetch();
     }
 
@@ -50,6 +50,7 @@ class Index extends Frontend
      * 帮助中心
      */
     public function help(){
+        $this->assign('common',self::common());
         return $this->view->fetch();
     }
 

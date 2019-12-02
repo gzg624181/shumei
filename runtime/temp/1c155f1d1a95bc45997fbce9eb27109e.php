@@ -1,47 +1,71 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:83:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/index\view\index\help.html";i:1575258554;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\meta.html";i:1575258584;}*/ ?>
 <!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    {include file="common/meta"}
+    <meta charset="utf-8">
+<title><?php echo (isset($index['title']) && ($index['title'] !== '')?$index['title']:''); ?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+<?php if(isset($common['index']['keywords'])): ?>
+<meta name="keywords" content="<?php echo $index['keywords']; ?>">
+<?php endif; if(isset($common['index']['description'])): ?>
+<meta name="description" content="<?php echo $common['index']['description']; ?>">
+<?php endif; ?>
+<meta name="author" content="<?php echo (isset($common['index']['author']) && ($common['index']['author'] !== '')?$common['index']['author']:''); ?>">
+<!-- Favicon and Apple Icons -->
+<link rel="shortcut icon" href="/shumei/public/assets/img/favicon.ico" />
+<link href="/shumei/public/assets/css/frontend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.css?v=<?php echo \think\Config::get('site.version'); ?>" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+  <script src="/shumei/public/assets/js/html5shiv.js"></script>
+  <script src="/shumei/public/assets/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    var require = {
+        config: <?php echo json_encode($config); ?>
+    };
+</script>
     <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="__CDN__/assets/css/bootstrap.min_5.css">
-    <link rel="stylesheet" href="__CDN__/assets/css/font-awesome.min_5.css">
-    <link rel="stylesheet" href="__CDN__/assets/css/animate.css">
-    <link rel="stylesheet" href="__CDN__/assets/css/global_5.css">
-    <link rel="stylesheet" href="__CDN__/assets/css/information.css">
-    <link rel="stylesheet" href="__CDN__/assets/css/flexslider.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/bootstrap.min_5.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/font-awesome.min_5.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/animate.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/global_5.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/information.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/flexslider.css">
     <!-- 字体图标ie7兼容性处理 -->
     <!--[if lt IE 8]>
-    <link rel="stylesheet" href="__CDN__/assets/css/font-awesome-ie7.min_5.css">
+    <link rel="stylesheet" href="/shumei/public/assets/css/font-awesome-ie7.min_5.css">
     <![endif]-->
 
 
     <!--- jQuery -->
-    <script src="__CDN__/assets/js/jquery.min_4.js"></script>
+    <script src="/shumei/public/assets/js/jquery.min_4.js"></script>
     <!-- Validation 表单验证插件-->
-    <script src="__CDN__/assets/js/jquery.validate.min_4.js"></script>
+    <script src="/shumei/public/assets/js/jquery.validate.min_4.js"></script>
 
     <!--[if lt IE 9]>
-    <script src="__CDN__/assets/js/respond.min_4.js"></script>
+    <script src="/shumei/public/assets/js/respond.min_4.js"></script>
     <![endif]-->
-    <script src="__CDN__/assets/js/bootstrap_4.js"></script>
-    <script src="__CDN__/assets/js/aebiz_global-0.1_4.js"></script>
-    <script src="__CDN__/assets/js/jquery.hoverintent.min.js"></script>
-    <script src="__CDN__/assets/js/jquery.easing.min.js"></script>
-    <script src="__CDN__/assets/js/jquery.flexslider-min_4.js"></script>
+    <script src="/shumei/public/assets/js/bootstrap_4.js"></script>
+    <script src="/shumei/public/assets/js/aebiz_global-0.1_4.js"></script>
+    <script src="/shumei/public/assets/js/jquery.hoverintent.min.js"></script>
+    <script src="/shumei/public/assets/js/jquery.easing.min.js"></script>
+    <script src="/shumei/public/assets/js/jquery.flexslider-min_4.js"></script>
     <!-- Favicon and Apple Icons -->
-    <link rel="icon" type="image/png" href="/__CDN__/assets/images/icons/icon.png">
+    <link rel="icon" type="image/png" href="//shumei/public/assets/images/icons/icon.png">
 </head>
 
 <body>
 
-<link rel="stylesheet" href="__CDN__/assets/css/rightsuspension_5.css">
-<script src="__CDN__/assets/js/ajaxcart_4.js"></script>
+<link rel="stylesheet" href="/shumei/public/assets/css/rightsuspension_5.css">
+<script src="/shumei/public/assets/js/ajaxcart_4.js"></script>
 
 <!-- Validation 表单验证插件-->
-<script src="__CDN__/assets/js/jquery.validate.min_4.js"></script>
-<script src="__CDN__/assets/js/md5_4.js"></script>
+<script src="/shumei/public/assets/js/jquery.validate.min_4.js"></script>
+<script src="/shumei/public/assets/js/md5_4.js"></script>
 <!--新版返回顶部-->
 <div class="online-wrap">
     <div class="online-fixed">
@@ -53,11 +77,11 @@
                 <span class="ot-sjx"></span>
                 <div class="online-unfold ou-w1">
                     <div class="flol">
-                        <img src="__CDN__/assets/picture/online-tool-sj_4.png">
+                        <img src="/shumei/public/assets/picture/online-tool-sj_4.png">
                         <p class="ou-txt">700度手机版</p>
                     </div>
                     <div class="flor">
-                        <img src="__CDN__/assets/picture/online-tool-wx_4.png">
+                        <img src="/shumei/public/assets/picture/online-tool-wx_4.png">
                         <p class="ou-txt">700度微信公众号</p>
                     </div>
                 </div>
@@ -120,11 +144,11 @@ var _hmt = _hmt || [];
 			<div class="y_userbox">
 				<div class="y_rtbtn y_userbtn" ><i class="fa fa-user"></i></div>
 				会员已登陆状态
-				<div class="y_rtbtn y_userbtn add-tooltip"><a class="y_pic add-tooltip" href="#" data-toggle="tooltip" data-placement="left" title="全网会员名"><img src="__CDN__/assets/picture/user2_1.png"></a></div>
+				<div class="y_rtbtn y_userbtn add-tooltip"><a class="y_pic add-tooltip" href="#" data-toggle="tooltip" data-placement="left" title="全网会员名"><img src="/shumei/public/assets/picture/user2_1.png"></a></div>
 			</div>
 
 			<div class="add-tooltip" data-toggle="tooltip" data-placement="left" style="cursor:pointer;background:#000;position: absolute;bottom: 140px;left: 0" title="联系客服">
-	            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3460227840&site=qq&menu=yes"><img src="__CDN__/assets/picture/qqservice_4.png" style="width: 35px;"></a>
+	            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3460227840&site=qq&menu=yes"><img src="/shumei/public/assets/picture/qqservice_4.png" style="width: 35px;"></a>
             </div>
 
 			<div class="y_rtbtn y_rtlove add-tooltip" data-toggle="tooltip" data-placement="left" title="我的收藏"></div>
@@ -161,7 +185,7 @@ var _hmt = _hmt || [];
 	</div>
 
 	</div>
-	<script type="text/javascript" charset="utf-8" src="__CDN__/assets/js/10053757_4.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/shumei/public/assets/js/10053757_4.js"></script>
 <script>
 
 		$(function(){
@@ -299,7 +323,7 @@ $(".y_userbtn").click(function() {
 						$(".alert").html("用户名或者密码错误!");
 						$("#hasVilidateCode").val("true");
 						$("#validateCodediv").css("display","block");
-						$("#code").html('<span class="y_rdltit">验证码</span><div class="y_yzgrup"><input type="text" class="form-control" id="validateCode" name="validateCode" value=""><img id="validateImg" src="__CDN__/assets/picture/6927733f41eb4f669430143155f79916.gif" onClick="javascript:flushValidateCode();"/><span><span>看不清？<a href="javascript:flushValidateCode();" class="f_color2">换一张</a></span></span></div>');
+						$("#code").html('<span class="y_rdltit">验证码</span><div class="y_yzgrup"><input type="text" class="form-control" id="validateCode" name="validateCode" value=""><img id="validateImg" src="/shumei/public/assets/picture/6927733f41eb4f669430143155f79916.gif" onClick="javascript:flushValidateCode();"/><span><span>看不清？<a href="javascript:flushValidateCode();" class="f_color2">换一张</a></span></span></div>');
 					}else if(data == "success"){
 						$.getJSON("/customer/isLogin",
 								function(data) {
@@ -348,7 +372,7 @@ $(".y_userbtn").click(function() {
 						$(".alert").show();
 						$(".alert").html("用户名或者密码错误!");
 						$("#hasVilidateCode").val("true");
-						$("#code").html('<span class="y_rdltit">验证码</span><div class="y_yzgrup"><input type="text" class="form-control" id="validateCode1" name="validateCode" value=""><img id="validateImg" src="__CDN__/assets/picture/6927733f41eb4f669430143155f79916.gif" onClick="javascript:flushValidateCode();"/><span><span>看不清？<a href="javascript:flushValidateCode();" class="f_color2">换一张</a></span></span></div>');
+						$("#code").html('<span class="y_rdltit">验证码</span><div class="y_yzgrup"><input type="text" class="form-control" id="validateCode1" name="validateCode" value=""><img id="validateImg" src="/shumei/public/assets/picture/6927733f41eb4f669430143155f79916.gif" onClick="javascript:flushValidateCode();"/><span><span>看不清？<a href="javascript:flushValidateCode();" class="f_color2">换一张</a></span></span></div>');
 					}else if(data == "success"){
 						$.getJSON("/customer/isLogin",
 								function(data) {
@@ -410,8 +434,8 @@ $(".y_userbtn").click(function() {
 <div class="main-serch-container">
     <div class="container">
         <h1 class="y_logo">
-            <a href="/" title="aebiz"><img src="__CDN__/assets/picture/0000020092_4.fid"></a>
-            <span class="logo_txt"><img src="__CDN__/assets/picture/logo_ad.gif"></span>
+            <a href="/" title="aebiz"><img src="/shumei/public/assets/picture/0000020092_4.fid"></a>
+            <span class="logo_txt"><img src="/shumei/public/assets/picture/logo_ad.gif"></span>
         </h1>
         <!--nav start-->
         <div class="y_mainnav">
@@ -451,7 +475,7 @@ $(".y_userbtn").click(function() {
 
                         帮助中心
 
-                        <span><img src="__CDN__/assets/picture/help5_4.gif"></span>
+                        <span><img src="/shumei/public/assets/picture/help5_4.gif"></span>
 
                     </a>
                 </li>
@@ -751,7 +775,7 @@ $(".y_userbtn").click(function() {
                     <h4 class="h4-title">如何筛选产品</h4>
                     <div class="box-content">
 
-                        <div><p><span style="font-size: 18px; color: rgb(0, 0, 0);">方法一、点击首页左边产品类别跳转至相应的险种</span></p><p><span style="font-size: 18px;"><img src="__CDN__/assets/picture/0000030497.fid" title="201704200914169203573709088.png" alt="201704200914169203573709088.png"/></span></p><p><span style="color: rgb(0, 0, 0); font-size: 18px;"><br/></span></p><p><span style="font-size: 18px; color: rgb(0, 0, 0);">根据需求进一步筛选产品</span></p><p><span style="color: rgb(0, 0, 0); font-size: 18px;"><img src="__CDN__/assets/picture/0000027338.fid" title="201704170954159347412459628.png" alt="201704170954159347412459628.png" style="width: 778px; height: 334px;" height="334" width="778"/></span></p><p><span style="font-size: 18px; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-size: 18px; color: rgb(0, 0, 0);">方法二、在首页右上方搜索框输入产品名称或保险公司等关键字进行搜索</span></p><p><span style="font-size: 18px;"><img src="__CDN__/assets/picture/0000027339.fid" title="201704170954593715360605173.png" alt="201704170954593715360605173.png" style="width: 870px; height: 209px;" height="209" width="870"/></span></p><p><span style="font-size: 18px; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-size: 18px; color: rgb(0, 0, 0);">根据搜索出的关键字进一步找查相关产品，点击购买即可查看产品详情</span><span style="font-size: 18px;"></span></p><p><img src="__CDN__/assets/picture/0000027340.fid" title="201704170955480850009732769.png" alt="201704170955480850009732769.png" style="width: 784px; height: 504px;" height="504" width="784"/><span style="font-size: 18px;"></span><span style="font-size: 18px;"></span></p></div>
+                        <div><p><span style="font-size: 18px; color: rgb(0, 0, 0);">方法一、点击首页左边产品类别跳转至相应的险种</span></p><p><span style="font-size: 18px;"><img src="/shumei/public/assets/picture/0000030497.fid" title="201704200914169203573709088.png" alt="201704200914169203573709088.png"/></span></p><p><span style="color: rgb(0, 0, 0); font-size: 18px;"><br/></span></p><p><span style="font-size: 18px; color: rgb(0, 0, 0);">根据需求进一步筛选产品</span></p><p><span style="color: rgb(0, 0, 0); font-size: 18px;"><img src="/shumei/public/assets/picture/0000027338.fid" title="201704170954159347412459628.png" alt="201704170954159347412459628.png" style="width: 778px; height: 334px;" height="334" width="778"/></span></p><p><span style="font-size: 18px; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-size: 18px; color: rgb(0, 0, 0);">方法二、在首页右上方搜索框输入产品名称或保险公司等关键字进行搜索</span></p><p><span style="font-size: 18px;"><img src="/shumei/public/assets/picture/0000027339.fid" title="201704170954593715360605173.png" alt="201704170954593715360605173.png" style="width: 870px; height: 209px;" height="209" width="870"/></span></p><p><span style="font-size: 18px; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-size: 18px; color: rgb(0, 0, 0);">根据搜索出的关键字进一步找查相关产品，点击购买即可查看产品详情</span><span style="font-size: 18px;"></span></p><p><img src="/shumei/public/assets/picture/0000027340.fid" title="201704170955480850009732769.png" alt="201704170955480850009732769.png" style="width: 784px; height: 504px;" height="504" width="784"/><span style="font-size: 18px;"></span><span style="font-size: 18px;"></span></p></div>
 
                     </div>
                 </div>

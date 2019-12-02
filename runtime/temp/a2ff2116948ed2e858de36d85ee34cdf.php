@@ -1,18 +1,18 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:8:{s:84:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/index\view\index\index.html";i:1575018644;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\meta.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\online.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\landed.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\header.html";i:1574651412;s:73:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\tag.html";i:1574651412;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\help.html";i:1575018524;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\footer.html";i:1575021146;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:8:{s:84:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/index\view\index\index.html";i:1575018644;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\meta.html";i:1575258743;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\online.html";i:1574651412;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\landed.html";i:1575257418;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\header.html";i:1575257476;s:73:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\tag.html";i:1574651412;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\help.html";i:1575018524;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\index\view\common\footer.html";i:1575257647;}*/ ?>
 <!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
-<title><?php echo (isset($index['title']) && ($index['title'] !== '')?$index['title']:''); ?></title>
+<title><?php echo (isset($common['index']['title']) && ($common['index']['title'] !== '')?$common['index']['title']:''); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="renderer" content="webkit">
-<?php if(isset($index['keywords'])): ?>
-<meta name="keywords" content="<?php echo $index['keywords']; ?>">
-<?php endif; if(isset($index['description'])): ?>
-<meta name="description" content="<?php echo $index['description']; ?>">
+<?php if(isset($common['index']['keywords'])): ?>
+<meta name="keywords" content="<?php echo $common['index']['keywords']; ?>">
+<?php endif; if(isset($common['index']['description'])): ?>
+<meta name="description" content="<?php echo $common['index']['description']; ?>">
 <?php endif; ?>
-<meta name="author" content="<?php echo (isset($index['author']) && ($index['author'] !== '')?$index['author']:''); ?>">
+<meta name="author" content="<?php echo (isset($common['index']['author']) && ($common['index']['author'] !== '')?$common['index']['author']:''); ?>">
 <!-- Favicon and Apple Icons -->
 <link rel="shortcut icon" href="/shumei/public/assets/img/favicon.ico" />
 <link href="/shumei/public/assets/css/frontend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.css?v=<?php echo \think\Config::get('site.version'); ?>" rel="stylesheet">
@@ -120,7 +120,7 @@
             <li class="y_headrli"><a class="y_plr10" href="/customer/toIndex" target="_blank">会员中心</a> | </li>
             <!--700度系统把未艾相关的链接都隐藏掉（因监管）
              <li class="y_headrli"><a class="y_plr10" href="http://jyk.700du.cn/shop.shtml?option=jh" target="_blank">服务卡</a> | </li> -->
-            <li class="y_headrli"><span class="y_mlr5">客服电话：<strong class="phone"><?php echo $top['hotline']; ?></strong></span></li>
+            <li class="y_headrli"><span class="y_mlr5">客服电话：<strong class="phone"><?php echo $common['top']['hotline']; ?></strong></span></li>
         </ul><!-- End .header-top-right -->
     </div><!-- End .container -->
 </div>
@@ -137,7 +137,7 @@
     <div class="main-serch-container">
         <div class="container">
             <h1 class="y_logo">
-                <a href="/" title="700du"><img src="/shumei/public<?php echo $top['logo']; ?>"></a>
+                <a href="/" title="700du"><img src="/shumei/public<?php echo $common['top']['logo']; ?>"></a>
             </h1>
             <!--nav start-->
             <div class="y_mainnav">
@@ -1804,13 +1804,13 @@
     <div class="container">
         <div><div class="container footer-friendlink footer-friendlinkborn">
             <div class="f_link f_linkcfff"><p style="text-align:center;color:#fff;">友情链接：
-                <?php if(is_array($footer['link']) || $footer['link'] instanceof \think\Collection || $footer['link'] instanceof \think\Paginator): $i = 0; $__LIST__ = $footer['link'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                <?php if(is_array($common['link']) || $common['link'] instanceof \think\Collection || $common['link'] instanceof \think\Paginator): $i = 0; $__LIST__ = $common['link'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <a href="<?php echo $vo['lnkurl']; ?>" target="_blank"><?php echo $vo['lnkname']; ?></a>
                 <?php endforeach; endif; else: echo "" ;endif; ?>
             </p></div></div>
             <div class="site-info" style="padding-bottom:25px;">
-                <div class="container"><div class="info-text" style="color:#fff;text-align:center;line-height:2.4;padding-top:0;"><p><?php echo $footer['copyright']; ?><br/>
-                    <?php echo $footer['icp']; ?> | 未经许可不得转载</p></div></div></div></div><!--底部商城资讯 end--><!--%@-->
+                <div class="container"><div class="info-text" style="color:#fff;text-align:center;line-height:2.4;padding-top:0;"><p><?php echo $common['copyright']; ?><br/>
+                    <?php echo $common['icp']; ?> | 未经许可不得转载</p></div></div></div></div><!--底部商城资讯 end--><!--%@-->
     </div><!-- End .container -->
 </div>
 <!-- End #footer-bottom -->

@@ -1,14 +1,14 @@
 <meta charset="utf-8">
-<title>{$index.title|default=''}</title>
+<title>{$common.index.title|default=''}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="renderer" content="webkit">
-{if isset($index.keywords)}
-<meta name="keywords" content="{$index.keywords}">
+{if isset($common.index.keywords)}
+<meta name="keywords" content="{$common.index.keywords}">
 {/if}
-{if isset($index.description)}
-<meta name="description" content="{$index.description}">
+{if isset($common.index.description)}
+<meta name="description" content="{$common.index.description}">
 {/if}
-<meta name="author" content="{$index.author|default=''}">
+<meta name="author" content="{$common.index.author|default=''}">
 <!-- Favicon and Apple Icons -->
 <link rel="shortcut icon" href="__CDN__/assets/img/favicon.ico" />
 <link href="__CDN__/assets/css/frontend{$Think.config.app_debug?'':'.min'}.css?v={$Think.config.site.version}" rel="stylesheet">
