@@ -283,7 +283,7 @@ select.form-control option{padding:4px 12px;}
 .y_serhhot{clear:both;height:18px;line-height:18px;overflow:hidden;padding-top:5px;}
 .y_serhhot a{float:left;margin-right:13px;white-space:nowrap;}
 .y_topcart{float:right;margin-top:28px;position:relative;z-index:998;}
-.y_topcart .dropdown-toggle{width:80px;padding:7px 14px 7px 35px;border-radius:0;font-size:12px;line-height:22px;border-color: #e6e6e6;background:#fff;color:#666}
+.y_topcart .dropdown-toggle{padding:7px 14px 7px 35px;border-radius:0;font-size:12px;line-height:22px;border-color: #e6e6e6;background:#fff;color:#666}
 .y_topcart .btn:hover{background: #fff;border-color: #e6e6e6;color: #666;}
 .y_topcart .cart-menu-icon {width:16px;height:17px;position: absolute;left:11px;top:11px;background-image: url(../images/user.png);border:none;}
 .y_topcart .fa-angle-right{margin-left: 17px;font-size: 16px;}

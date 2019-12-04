@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\goods\edit.html";i:1574731888;s:77:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\layout\default.html";i:1574656895;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\meta.html";i:1574656895;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\script.html";i:1574656895;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\goods\edit.html";i:1575441564;s:77:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\layout\default.html";i:1574656895;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\meta.html";i:1574656895;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\script.html";i:1574656895;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -62,7 +62,8 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-category_id" data-rule="required" data-source="category/index" data-params='{"custom[type]":"goods"}' class="form-control selectpage" name="row[category_id]" type="text" value="<?php echo $row['category_id']; ?>">
+
+            <input id="c-category_id"  data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"page"}' class="form-control selectpage" name="row[category_id]" type="text" value="<?php echo htmlentities($row['category_id']); ?>">
         </div>
     </div>
 

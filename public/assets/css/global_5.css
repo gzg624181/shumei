@@ -276,14 +276,14 @@ select.form-control option{padding:4px 12px;}
 .y_serch .y_serlist ul li:hover{background:#fafafa;color:#eb451b}
 .y_serch .y_hover ul{display:block;}
 .y_serch .y_hover b{-webkit-transform:rotate(180deg);transform:rotate(180deg);-webkit-transition:transform 0.2s;transition:transform 0.2s;}
-.y_serch .form-control{width:236px;font-size:12px;height:22px;float:left;border-radius:0;padding:7px 10px;border-color:#e6e6e6;border-width:1px; border-right: 0;}
+.y_serch .form-control{width:236px;font-size:12px;height:22px;float:left;border-radius:0;padding:7px 10px;border-color:#e6e6e6;border-width:1px; border-right: 0; height: 36px}
 .y_serch .form-control:focus{border-color:#e6e6e6;box-shadow:3px 3px 3px #e5e5e5 inset;}
 .y_serch .btn{float:left;width:36px;height:36px;border:1px solid #e6e6e6;border-left:none;background:#fff;color:#999;border-radius:0;padding:0;-webkit-transition:background 0.2s;transition:background 0.2s;text-align:center;letter-spacing:4px;font:400 16px/35px 'microsoft YaHei';}
 .y_serch .btn:hover,.y_serch .btn:focus,.y_serch .btn:active{	background-color:#eb451b;color:#fff}
 .y_serhhot{clear:both;height:18px;line-height:18px;overflow:hidden;padding-top:5px;}
 .y_serhhot a{float:left;margin-right:13px;white-space:nowrap;}
 .y_topcart{float:right;margin-top:28px;position:relative;z-index:998;}
-.y_topcart .dropdown-toggle{width:80px;padding:7px 14px 7px 35px;border-radius:0;font-size:12px;line-height:22px;border-color: #e6e6e6;background:#fff;color:#666}
+.y_topcart .dropdown-toggle{width:130px;padding:7px 14px 7px 35px;border-radius:0;font-size:12px;line-height:22px;border-color: #e6e6e6;background:#fff;color:#666}
 .y_topcart .btn:hover{background: #fff;border-color: #e6e6e6;color: #666;}
 .y_topcart .cart-menu-icon {width:16px;height:17px;position: absolute;left:11px;top:11px;background-image: url(../images/user_4.png);border:none;}
 .y_topcart .fa-angle-right{margin-left: 17px;font-size: 16px;}

@@ -167,201 +167,54 @@
             <div class="col_main">
                 <div class="DragContainer main_wrap" id="DragContainer14891256454011" starttop="1242" startleft="641" startheight="54" startwidth="846" overclass="OverDragContainer" dropobj="0">
                     <div class="DragBox" id="Item1489125670848" starttop="1252" startleft="651" startheight="34" startwidth="826" compid="homePageUpFloor">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <!--楼层商品分类切换组件-->
                         <div class="y_productmc">
                             <ul class="y_flortabtit">
-
-
-
-                                <li class="y_active">
-
-
-
-                                    意外险
-                                </li>
-
-
-
-
-                                <li>
-
-
-                                    老年险
-                                </li>
-
+                                <li class="y_active">意外险</li>
+                                <li>老年险</li>
                             </ul>
-
-
-
-
                             <div class="y_piclist y_visible">
+                                <!--意外险begin-->
                                 <ul class="y_itemwrap">
-
-
-
-
-
-
+                                    {volist name='accident' id='vo'}
                                     <li class="y_item1">
-                                        <a href="/front/product/toProduct/e4abe1999a164d309b282974aad35261" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001160992.fid">
-                                            <h2>安联安泰百万意外保障计划</h2>
+                                        <a href="{:url('goodscontent',['id'=>$vo.id])}" class="con">
+                                            <img class="pic" src="__CDN__{$vo.picarr[0]}">
+                                            <h2>{$vo.goods_name}</h2>
                                             <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
                                             <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
                                             <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p>百万高额意外;0免赔，100%赔付;不限社保用药;部分计划更可选公立特需和私立医院就诊</p>
+                                            <p>{$vo.tags}</p>
                                         </a>
-                                        <a href="/front/product/toProduct/e4abe1999a164d309b282974aad35261" target="_blank" class="price">
-                                            <span class="p"><em>150</em>元起</span>
-                                            <span class="c">已售: 16,221</span>
+                                        <a href="{:url('goodscontent',['id'=>$vo.id])}" target="_blank" class="price">
+                                            <span class="p"><em>{$vo.price}</em>元起</span>
+                                            <span class="c">已售: {$vo.sales_actual}</span>
                                         </a>
-                                        <dl class="detail">
-                                            <dt>安联安泰百万意外保障计划</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>意外身故及伤残</span>最高100万</dd>
-
-                                            <dd><span>
-猝死保障</span>最高10万</dd>
-
-                                            <dd><span>
-意外医疗费用</span>最高5万</dd>
-
-                                            <dd><span>
-公立特需/私立医院意外医疗</span>最高1.3万</dd>
-
-                                            <dd><span>
-意外住院津贴</span>最高600元/天</dd>
-
-                                            <dd><span>
-非电动车免费道路救援</span>1次</dd>
-
-
-
-                                        </dl>
+                                        <!--<dl class="detail">-->
+                                            <!--<dt>安联安泰百万意外保障计划</dt>-->
+                                            <!--&lt;!&ndash; 					         <dd><span>火车、轮船意外身故</span>5万</dd> &ndash;&gt;-->
+                                            <!--&lt;!&ndash; 					         <dd><span>一般意外伤残</span>1万</dd> &ndash;&gt;-->
+                                            <!--&lt;!&ndash; 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> &ndash;&gt;-->
+                                            <!--&lt;!&ndash; 					         <dd><span>旅游意外身故</span>2万</dd> &ndash;&gt;-->
+                                            <!--<dd><span>意外身故及伤残</span>最高100万</dd>-->
+                                            <!--<dd><span>-->
+<!--猝死保障</span>最高10万</dd>-->
+                                            <!--<dd><span>-->
+<!--意外医疗费用</span>最高5万</dd>-->
+                                            <!--<dd><span>-->
+<!--公立特需/私立医院意外医疗</span>最高1.3万</dd>-->
+                                            <!--<dd><span>-->
+<!--意外住院津贴</span>最高600元/天</dd>-->
+                                            <!--<dd><span>-->
+<!--非电动车免费道路救援</span>1次</dd>-->
+                                        <!--</dl>-->
                                     </li>
-
-
-
-                                    <li class="y_item1">
-                                        <a href="/front/product/toProduct/0ae3dcbbd6f441379e2f84c9cfc9b3bf" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001322795.fid">
-                                            <h2>史带星享百万人生个人意外险</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p>百万高额，保障全面；
-                                                交通意外，双倍给付；
-                                                不限社保，医疗全报销；</p>
-                                        </a>
-                                        <a href="/front/product/toProduct/0ae3dcbbd6f441379e2f84c9cfc9b3bf" target="_blank" class="price">
-                                            <span class="p"><em>150</em>元起</span>
-                                            <span class="c">已售: 84,085</span>
-                                        </a>
-                                        <dl class="detail">
-                                            <dt>史带星享百万人生个人意外险</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>意外身故/残疾</span>100万</dd>
-
-                                            <dd><span>
-航空意外</span>100万</dd>
-
-                                            <dd><span>
-自驾车身故/残疾</span>50万</dd>
-
-                                            <dd><span>
-意外医疗</span>5万</dd>
-
-                                            <dd><span>
-重症津贴</span>1200元/天</dd>
-
-
-
-                                        </dl>
-                                    </li>
-
-
-
-                                    <li class="y_item1">
-                                        <a href="/front/product/toProduct/390d88d1845b4ce4b8c7e524b0db5815" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001261764.fid">
-                                            <h2>平安个意意外伤害保险</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p>意外身故/伤残，50万元；
-                                                意外伤害医疗，5万元；
-                                                职业类别:1-3类职业;
-                                                投保年龄:3周岁-60周岁;</p>
-                                        </a>
-                                        <a href="/front/product/toProduct/390d88d1845b4ce4b8c7e524b0db5815" target="_blank" class="price">
-                                            <span class="p"><em>98</em>元起</span>
-                                            <span class="c">已售: 7,213</span>
-                                        </a>
-                                        <dl class="detail">
-                                            <dt>平安个意意外伤害保险</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>意外身故/伤残</span>50万元</dd>
-
-                                            <dd><span>
-意外伤害医疗</span>5万元</dd>
-
-                                            <dd><span>
-职业类别</span>1-3类职业</dd>
-
-                                            <dd><span>
-投保年龄</span>3周岁-60周岁</dd>
-
-
-
-                                        </dl>
-                                    </li>
-
-
-
+                                    {/volist}
                                 </ul>
-
+                                <!--意外险end-->
                             </div>
-
-
-
-
-
                             <div class="y_piclist">
                                 <ul class="y_itemwrap">
-
-
-
-
-
                                     <li class="y_item1">
                                         <a href="/front/product/toProduct/f8f0a83b8a1644b4b88eb59de26465d4" target="_blank" class="con">
                                             <img class="pic" src="__CDN__/assets/picture/0001342682.fid">

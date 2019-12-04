@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:86:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\category\edit.html";i:1574656895;s:77:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\layout\default.html";i:1574656895;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\meta.html";i:1574656895;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\script.html";i:1574656895;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:86:"D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\category\edit.html";i:1575438475;s:77:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\layout\default.html";i:1574656895;s:74:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\meta.html";i:1574656895;s:76:"D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\view\common\script.html";i:1574656895;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>

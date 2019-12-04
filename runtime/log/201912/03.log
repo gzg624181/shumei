@@ -1,0 +1,882 @@
+---------------------------------------------------------------
+[ 2019-12-03T09:15:27+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/index/index
+[运行时间：0.209225s] [吞吐率：4.78req/s] [内存消耗：3,847.25kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000105s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004399s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001581s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000467s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000069s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000386s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000405s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022302s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.019007s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.004998s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009509s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000687s ]
+---------------------------------------------------------------
+[ 2019-12-03T09:15:27+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/dashboard?addtabs=1
+[运行时间：0.098245s] [吞吐率：10.18req/s] [内存消耗：3,729.09kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003238s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/index/index',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001322s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000298s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000030s ]
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000351s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000465s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012107s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.004890s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007343s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001366s ]
+---------------------------------------------------------------
+[ 2019-12-03T09:15:27+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/ajax/lang?callback=define&controllername=index&v=1575335727
+[运行时间：0.049805s] [吞吐率：20.08req/s] [内存消耗：2,868.13kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003068s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/index/index',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1575335727',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001318s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000300s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000029s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000376s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000396s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-03T09:15:28+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/ajax/lang?callback=define&controllername=dashboard&v=1575335727
+[运行时间：0.046533s] [吞吐率：21.49req/s] [内存消耗：2,867.05kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003134s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/dashboard?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1575335727',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001274s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000332s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000029s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000291s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000301s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-03T18:21:20+08:00 ] 0.0.0.0 GET localhost/shumei/public/index.php/admin/
+[运行时间：0.084942s] [吞吐率：11.77req/s] [内存消耗：1,961.68kb] [文件加载：115]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001713s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006288s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.004494s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-03T18:21:33+08:00 ] 0.0.0.0 GET localhost/shumei/public/index.php/admin/jindex
+[运行时间：0.052241s] [吞吐率：19.14req/s] [内存消耗：1,961.77kb] [文件加载：115]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002704s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'jindex',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.002328s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-03T18:21:37+08:00 ] 0.0.0.0 GET localhost/shumei/public/index.php/admin/index/
+[运行时间：0.035388s] [吞吐率：28.26req/s] [内存消耗：1,961.77kb] [文件加载：115]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002808s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.002260s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-03T18:21:52+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/command?ref=addtabs
+[运行时间：0.114382s] [吞吐率：8.74req/s] [内存消耗：3,394.98kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003627s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'command',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003043s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000361s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000330s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023085s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.007913s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007336s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000768s ]
+---------------------------------------------------------------
+[ 2019-12-03T18:21:52+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/index/index
+[运行时间：0.133802s] [吞吐率：7.47req/s] [内存消耗：3,848.52kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003334s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001243s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.001046s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000037s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000244s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000270s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011861s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.004833s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.004996s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000585s ]
+---------------------------------------------------------------
+[ 2019-12-03T18:21:53+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/dashboard?addtabs=1
+[运行时间：0.092519s] [吞吐率：10.81req/s] [内存消耗：3,729.09kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003354s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/index/index',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001294s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000283s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000034s ]
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000242s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000328s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001949s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.005657s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.005011s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000464s ]
+---------------------------------------------------------------
+[ 2019-12-03T18:21:53+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/ajax/lang?callback=define&controllername=dashboard&v=1575368513
+[运行时间：0.050776s] [吞吐率：19.69req/s] [内存消耗：2,867.05kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003045s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/dashboard?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1575368513',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001640s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000329s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000030s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000286s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000294s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-03T18:21:53+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/ajax/lang?callback=define&controllername=index&v=1575368512
+[运行时间：0.060984s] [吞吐率：16.40req/s] [内存消耗：2,868.13kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005197s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/index/index',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1575368512',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001365s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000653s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000070s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000300s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000300s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-03T18:21:54+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/command?addtabs=1
+[运行时间：0.087196s] [吞吐率：11.47req/s] [内存消耗：3,674.18kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003083s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'command',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/index/index',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001647s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000303s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/command.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000030s ]
+[ info ] [ RUN ] app\common\controller\Backend->index[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\command\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000279s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000295s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011704s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.006071s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'command' LIMIT 1 [ RunTime:0.000416s ]
+---------------------------------------------------------------
+[ 2019-12-03T18:21:54+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/ajax/lang?callback=define&controllername=command&v=1575368514
+[运行时间：0.047658s] [吞吐率：20.98req/s] [内存消耗：2,864.40kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003156s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/command?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'command',
+  'v' => '1575368514',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001315s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000329s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000030s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/command.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000283s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000315s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-03T18:21:54+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1575368514211
+[运行时间：0.092823s] [吞吐率：10.77req/s] [内存消耗：3,716.69kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002820s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'command',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/command?addtabs=1',
+  'connection' => 'close',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1575368514211',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001397s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000306s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/command.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000030s ]
+[ info ] [ RUN ] app\common\controller\Backend->index[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000305s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000283s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010759s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.004881s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.005003s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_command` [ RunTime:0.007643s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000398s ]
+---------------------------------------------------------------
+[ 2019-12-03T18:21:57+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/addon?addtabs=1
+[运行时间：0.113735s] [吞吐率：8.79req/s] [内存消耗：3,817.38kb] [文件加载：152]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006567s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'addon',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/addon?ref=addtabs',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001351s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.001645s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000044s ]
+[ info ] [ RUN ] app\admin\controller\Addon->index[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Addon.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\view\addon\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000208s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000048s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011315s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.005665s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.004994s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2019-12-03T18:21:57+08:00 ] 0.0.0.0 GET localhost/shumei/public/OztrVoqw0h.php/ajax/lang?callback=define&controllername=addon&v=1575368517
+[运行时间：0.051582s] [吞吐率：19.39req/s] [内存消耗：2,886.44kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003401s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_80f766aef233b6332e9a7ad56561626d=1575021432; PHPSESSID=bpkookel0d0d5dpfo7kjf5rul4; Hm_lpvt_80f766aef233b6332e9a7ad56561626d=1575258537',
+  'referer' => 'http://localhost/shumei/public/OztrVoqw0h.php/addon?addtabs=1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'addon',
+  'v' => '1575368517',
+)
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001205s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @config_init [ RunTime:0.000329s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ BEHAVIOR ] Run \addons\geetest\Geetest @action_begin [ RunTime:0.000028s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpStudy\PHPTutorial\WWW\shumei\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\shumei\public/../application/admin/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000284s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000295s ]
+[ info ] [ LOG ] INIT File

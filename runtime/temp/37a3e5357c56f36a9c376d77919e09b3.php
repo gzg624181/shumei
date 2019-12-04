@@ -434,7 +434,7 @@
                             </div>
                             <div class="box-body">
                                 <ul class="products-list product-list-in-box">
-                                    <?php $__FOR_START_1277434583__=1;$__FOR_END_1277434583__=8;for($i=$__FOR_START_1277434583__;$i < $__FOR_END_1277434583__;$i+=1){ ?>
+                                    <?php $__FOR_START_994486780__=1;$__FOR_END_994486780__=8;for($i=$__FOR_START_994486780__;$i < $__FOR_END_994486780__;$i+=1){ ?>
                                     <li class="item">
                                         <div class="product-img">
                                             <img src="/shumei/public/assets/img/avatar.png" style="height:40px;width:40px;">

@@ -28,9 +28,23 @@ class Index extends Frontend
         //首页推荐的新闻资讯
         $news = new \app\admin\model\News;
         $newslist = $news::where('switch',1)->order('id desc')->limit(4)->select();
+        //首页意外险三条数据
+        $goods = new \app\admin\model\Goods;
+        $where = [
+            'is_delete'=>0,
+            'isIndex'  =>1,
+            'category_id'=>7
+        ];
+        $accident = $goods::where($where)->order('id desc')->limit(3)->select();
+        if($accident){
+           foreach ($accident as $key=>$value){
+               $accident[$key]['picarr']= explode(",",$value['images']);
+           }
+        }
         $this->assign('banner',$bannerlist);
         $this->assign('partners',$partnerslist);
         $this->assign('news',$newslist);
+        $this->assign('accident',$accident);
         $this->assign('common',self::common());
         return $this->view->fetch();
     }
