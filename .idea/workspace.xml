@@ -3,65 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6cc1c0f7-b0fd-4075-bbaf-af40263f68e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Goods.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Goods.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/goods/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/goods/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/goods/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/goods/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/help.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/global_5.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/global_5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/04b6752e2515084c40dd54b2db5b4229.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/1536812261577babdfe8f2bea065c781.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/15ecb30b6cc1be3d3698fa37f180c32b.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/16c8d6ea8c19e63594f7a65a2e88cea1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/19aef6c0a76292a851497c48e7115872.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/1b790e59b20c75381d807ae22ec31a7d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/1c155f1d1a95bc45997fbce9eb27109e.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/1f3d5e435eb5a02be08fe0909761175e.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/2730e98f1c0b1ced4e512df24cf73d10.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/340c99d526d2da079fd9715a227d7025.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/37a3e5357c56f36a9c376d77919e09b3.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/37a3e5357c56f36a9c376d77919e09b3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/37a8b781c453e25b95d50addb5a50574.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/39d25ccc0501dd1a206f74d911b4098c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/3c04fc938da7b81eec3302890b937ea1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/402ab79d16e68dcf77c0b8c041b6f27a.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/41d62bc8110bd333c8547d5a497932f2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/4cc19ce931e400c94ff39e2020bc7fe4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/4df6051604d4af41e283244f28371b02.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/4ee31f0bc0e02b2c9df1877f73ac8198.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/5981a703f41e06499696b2f8408afdbe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/5f0577d5d0a4955c9714d68c46e31e0b.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/61c554ad0f9eb8ee5302de99bf2c93b0.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/61c554ad0f9eb8ee5302de99bf2c93b0.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/7207a1eb86c2aea0ca172efa46aff213.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/77bb20c29cb8c6c7b0e0331809874e6a.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/77bcd89473cc6e1e6160f8f2c860da4d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/7b3da50d5790ea826f2f1f6b2fb0591c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/7eefc7f7cd046d9faa1ae2c5875f89aa.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/8e746ac53af1289803ce15b91b612ef6.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/8eb32b2e48523c662da060d5aa171170.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/94323fdd005e34865c3b04c1941c57ed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/966278bf65cdcfce11776bb608c8de91.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/a2ff2116948ed2e858de36d85ee34cdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/a2ff2116948ed2e858de36d85ee34cdf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/a35a0c7e207033f39a6ee8ff18158e04.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/a5038435fccf587565fd50436c2df14c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/a99187b024ec98595656bb39eab7e376.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/aba0a2abe061f224df10c552f88d39ae.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/b09cbe0980b0153031dffae58ceb5c68.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/b467f90d81294281e1ac1254679e066c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/b9e9eb86e7d9ead122c558e9366d4728.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/bac70e3fd46d53a5b3741a3a6b59eaef.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/bc44e3bca812ec845a9a2cb7734c0458.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/c02b4df2b7ef62bb7fcd395bd76bd005.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/c63212ff7e4475c98e82748d2e32822c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/c77eccaf7a3de771a576a278c356053d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/cbb7cd49a110e5388d519c691d2fa15d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/d0dab3c309ee7dc7f55df25b45de31fb.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/dc4eb1a10f633fb4c34f3f005aa33f31.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/e29ee0f3bf193539082060bf12270341.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/e94b9d04b89780f3559e8b0182431269.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/e94b9d04b89780f3559e8b0182431269.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/ed9261dd3dfb9df99719d7f0ec48c37d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/fc8ece46b796f61ce7c58c7475375864.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,148 +19,130 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/article/add.html">
+        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/controller/Litestoregoods.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="11" column="77" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="77" />
+            <state relative-caret-position="-921">
+              <caret line="715" column="48" selection-start-line="715" selection-start-column="48" selection-end-line="715" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="true" current-in-tab="true">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/controller/Litestoregoods.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="679" column="9" lean-forward="true" selection-start-line="679" selection-start-column="9" selection-end-line="679" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/controller/Areas.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/article/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-713">
-              <caret line="5" column="242" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="242" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/controller/Category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="27" column="55" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/common/model/Category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1956">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoregoods/goods_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-53">
-              <caret line="200" column="21" lean-forward="true" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
+            <state relative-caret-position="439">
+              <caret line="85" column="29" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="29" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#40#75#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-243">
+              <caret line="292" column="56" selection-start-line="292" selection-start-column="56" selection-end-line="292" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/view/litestoregoods/goods_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-868">
+              <caret line="4" column="58" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/view/litestoregoods/edit_goods.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="200" column="61" selection-start-line="200" selection-start-column="51" selection-end-line="200" selection-end-column="61" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ol#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ol#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ol#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#li#1;n#ol#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ol#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#li#2;n#ol#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ol#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#li#3;n#ol#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#lable#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#lable#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#lable#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#2;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#lable#2;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#3;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#lable#3;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#4;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#lable#4;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#5;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#lable#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#0;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#lable#0;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#1;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#lable#1;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#2;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#lable#2;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#3;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#lable#3;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#4;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#lable#4;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#lable#5;n#div#0;n#form#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#3;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/lang/zh-cn/category.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/common/controller/Backend.php">
+        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/view/litestoregoods/edit_price.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="489" column="32" selection-end-line="508" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/controller/Article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
+            <state relative-caret-position="-1615">
+              <caret line="1" column="150" selection-start-line="1" selection-start-column="138" selection-end-line="1" selection-end-column="150" />
               <folding>
-                <element signature="e#40#74#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/common/control.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/common/header.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/common/menu.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/common/meta.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/common/script.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoregoods/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="113" column="185" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="185" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/lang/zh-cn/litestorecategory.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/controller/Litestorecategory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2139" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/lang/zh-cn/litestoregoods.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -225,39 +151,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getOrderDetail</find>
-      <find>deta</find>
-      <find>$goodsList</find>
       <find>goods_attr</find>
-      <find>top</find>
-      <find>logo</find>
-      <find>footer</find>
-      <find>goods_sku</find>
-      <find>addbusiness</find>
-      <find>addinf</find>
-      <find>view</find>
-      <find>c-business</find>
-      <find>kindeditor</find>
-      <find>add</find>
-      <find>商品类别</find>
-      <find>Category_id</find>
-      <find>type</find>
-      <find>Can not change the parent to child</find>
-      <find>Parameter %s can not be empty</find>
-      <find>$where</find>
-      <find>selected</find>
-      <find>sele</find>
-      <find>Db</find>
-      <find>select</find>
-      <find>category_id</find>
-      <find>安联安泰百万意外保障计划</find>
-      <find>images</find>
+      <find>goods_id</find>
+      <find>pay_status</find>
+      <find>order_sn</find>
+      <find>get</find>
+      <find>index</find>
+      <find>goods_list</find>
+      <find>批量删除</find>
       <find>dels</find>
-      <find>changeAllprice</find>
+      <find>picker</find>
+      <find>模板输出</find>
+      <find>&lt;</find>
+      <find>edit_goods</find>
+      <find>批量</find>
+      <find>select</find>
       <find>批量编辑</find>
+      <find>刷新</find>
+      <find>time_end</find>
+      <find>edit_timearea</find>
+      <find>edit_time</find>
+      <find>update_timearea</find>
+      <find>selectSpace</find>
+      <find>update</find>
+      <find>selectupdatePrice</find>
+      <find>pageSize</find>
+      <find>$page</find>
+      <find>changeAllprice</find>
+      <find>selectUpdatePrice</find>
+      <find>change</find>
+      <find>update_price</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>edit_price</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -266,28 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/assets/js/backend/goods.js" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/application/api/controller/Goods.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/common/menu.html" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/ylb.znwlwh.com/public/static/admin/css/admin.css" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/ylb.znwlwh.com/application/admin/view/order/ExportExcel.html" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoregoods/add_goods.html" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoregoods/edit_timearea.html" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/ylb.znwlwh.com/application/admin/view/order/index.html" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/ylb.znwlwh.com/application/admin/view/order/excel.html" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/ylb.znwlwh.com/application/admin/model/Order.php" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/api/controller/Ticket.php" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/public/assets/js/backend/litestoregoods.js" />
-        <option value="$PROJECT_DIR$/application/admin/model/Partners.php" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/ylb.znwlwh.com/application/admin/controller/Order.php" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/www.znwlwh.com/application/admin/view/order/index.html" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/www.znwlwh.com/application/admin/controller/Order.php" />
-        <option value="$PROJECT_DIR$/application/index/view/common/help.html" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/common.php" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/addons/litestore/model/Litestoreorder.php" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/addons/litestore/model/Wxlitestoregoods.php" />
-        <option value="$PROJECT_DIR$/application/index/view/common/landed.html" />
-        <option value="$PROJECT_DIR$/application/index/view/common/header.html" />
         <option value="$PROJECT_DIR$/application/index/view/common/footer.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/qiye.html" />
         <option value="$PROJECT_DIR$/application/index/view/common/meta.html" />
@@ -297,10 +202,6 @@
         <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/coupon/adds.html" />
         <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/public/assets/js/backend/coupon_log.js" />
         <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/controller/CouponLog.php" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/controller/Litestoreorder.php" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoreorder/detail.html" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoreorder/selectbusiness.html" />
-        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/api/controller/Order.php" />
         <option value="$PROJECT_DIR$/application/index/view/index/help.html" />
         <option value="$PROJECT_DIR$/public/assets/css/global_5.css" />
         <option value="$PROJECT_DIR$/public/assets/css/global.css" />
@@ -313,10 +214,36 @@
         <option value="$PROJECT_DIR$/application/admin/controller/Goods.php" />
         <option value="$PROJECT_DIR$/application/admin/view/goods/edit.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Category.php" />
-        <option value="$PROJECT_DIR$/application/index/view/index/index.html" />
-        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/api/controller/Order.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/www.znwlwh.com/application/admin/view/summary/memrebatedes.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/view/index/login.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/controller/FreeTime.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/view/litestoregoods/check.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/wx.ylbtl.cn/application/api/controller/Wxpay.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/public/assets/js/backend/litestoregoods.js" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/www.znwlwh.com/application/admin/controller/Order.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/www.znwlwh.com/application/admin/view/summary/memrebate.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/www.znwlwh.com/application/admin/controller/Summary.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoreorder/selectbusiness.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/api/controller/My.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoreorder/detail.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/controller/Litestoreorder.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/public/assets/js/backend/videos_comments.js" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoregoods/goods_list_bak.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/www.znwlwh.com/application/admin/view/order/index.html" />
         <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoregoods/goods_list.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/view/litestoregoods/edit_timearea.html" />
         <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanqi.znwlwh.com/application/admin/controller/Litestoregoods.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/public/assets/js/backend/coupon_log.js" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/api/controller/My.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/model/CouponLog.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/view/litestoregoods/goods_list.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/view/litestoregoods/edit_timearea.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/view/litestoregoods/edit_goods.html" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/controller/Litestoregoods.php" />
+        <option value="&lt;1aa8b2c0-358f-4cdf-9052-990cccc0a7ba&gt;/tanchytrip.com/application/admin/view/litestoregoods/edit_price.html" />
+        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/index/view/index/index.html" />
       </list>
     </option>
   </component>
@@ -365,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -377,19 +303,6 @@
               <item name="shumei" type="b2602c69:ProjectViewProjectNode" />
               <item name="shumei" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shumei" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shumei" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shumei" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shumei" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shumei" type="b2602c69:ProjectViewProjectNode" />
@@ -423,6 +336,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -470,12 +384,19 @@
       <workItem from="1575247379547" duration="25570000" />
       <workItem from="1575334469529" duration="21134000" />
       <workItem from="1575363403087" duration="7267000" />
-      <workItem from="1575421170366" duration="23529000" />
+      <workItem from="1575421170366" duration="24195000" />
+      <workItem from="1575506532638" duration="26934000" />
+      <workItem from="1575595298661" duration="9966000" />
+      <workItem from="1575852318930" duration="15622000" />
+      <workItem from="1575938684474" duration="14648000" />
+      <workItem from="1576024988897" duration="25505000" />
+      <workItem from="1576114669963" duration="19240000" />
+      <workItem from="1576198384837" duration="9804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189433000" />
+    <option name="totallyTimeSpent" value="311818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -483,8 +404,8 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.20576407" />
-      <window_info active="true" id="Remote Host" order="3" visible="true" weight="0.23123324" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20576407" />
+      <window_info id="Remote Host" order="3" weight="0.23458445" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -854,20 +775,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="190" column="81" selection-start-line="190" selection-start-column="81" selection-end-line="190" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        <state relative-caret-position="439">
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="29" />
           <folding>
             <element signature="e#40#75#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="292" column="56" selection-start-line="292" selection-start-column="56" selection-end-line="292" selection-end-column="56" />
         </state>
       </provider>
     </entry>

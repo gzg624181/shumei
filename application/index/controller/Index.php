@@ -28,7 +28,7 @@ class Index extends Frontend
         //首页推荐的新闻资讯
         $news = new \app\admin\model\News;
         $newslist = $news::where('switch',1)->order('id desc')->limit(4)->select();
-        //首页意外险三条数据
+        //首页意外险三条数据 category_id =7
         $goods = new \app\admin\model\Goods;
         $where = [
             'is_delete'=>0,
@@ -37,14 +37,53 @@ class Index extends Frontend
         ];
         $accident = $goods::where($where)->order('id desc')->limit(3)->select();
         if($accident){
-           foreach ($accident as $key=>$value){
-               $accident[$key]['picarr']= explode(",",$value['images']);
+            foreach ($accident as $key=>$value){
+                $accident[$key]['picarr']= explode(",",$value['images']);
+            }
+        }
+        //首页老年险 category =8
+        $where = [
+            'is_delete'=>0,
+            'isIndex'  =>1,
+            'category_id'=>8
+        ];
+        $old = $goods::where($where)->order('id desc')->limit(3)->select();
+        if($old){
+           foreach ($old as $key=>$value){
+               $old[$key]['picarr']= explode(",",$value['images']);
            }
+        }
+        //医疗保险 category =9
+        $where = [
+            'is_delete'=>0,
+            'isIndex'  =>1,
+            'category_id'=>9
+        ];
+        $medical = $goods::where($where)->order('id desc')->limit(3)->select();
+        if($medical){
+            foreach ($medical as $key=>$value){
+                $medical[$key]['picarr']= explode(",",$value['images']);
+            }
+        }
+        //健康保险 category =2
+        $where = [
+            'is_delete'=>0,
+            'isIndex'  =>1,
+            'category_id'=>2
+        ];
+        $health  = $goods::where($where)->order('id desc')->limit(3)->select();
+        if($health){
+            foreach ($health as $key=>$value){
+                $health[$key]['picarr']= explode(",",$value['images']);
+            }
         }
         $this->assign('banner',$bannerlist);
         $this->assign('partners',$partnerslist);
         $this->assign('news',$newslist);
         $this->assign('accident',$accident);
+        $this->assign('old',$old);
+        $this->assign('medical',$medical);
+        $this->assign('health',$health);
         $this->assign('common',self::common());
         return $this->view->fetch();
     }

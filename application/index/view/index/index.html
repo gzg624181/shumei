@@ -213,133 +213,25 @@
                                 </ul>
                                 <!--意外险end-->
                             </div>
+                            <!--老年险-->
                             <div class="y_piclist">
                                 <ul class="y_itemwrap">
+                                    {volist name='old' id='vo'}
                                     <li class="y_item1">
-                                        <a href="/front/product/toProduct/f8f0a83b8a1644b4b88eb59de26465d4" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001342682.fid">
-                                            <h2>夕阳红老年意外险</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p>不限社保用药的高性价比老年意外险 </p>
+                                        <a href="{:url('goodscontent',['id'=>$vo.id])}" class="con">
+                                            <img class="pic" src="__CDN__{$vo.picarr[0]}">
+                                            <h2>{$vo.goods_name}</h2>
+                                            <p>{$vo.tags} </p>
                                         </a>
-                                        <a href="/front/product/toProduct/f8f0a83b8a1644b4b88eb59de26465d4" target="_blank" class="price">
-                                            <span class="p"><em>358</em>元起</span>
-                                            <span class="c">已售: 2,860</span>
+                                        <a href="{:url('goodscontent',['id'=>$vo.id])}" target="_blank" class="price">
+                                            <span class="p"><em>{$vo.price}</em>元起</span>
+                                            <span class="c">已售: {$vo.sales_actual}</span>
                                         </a>
-                                        <dl class="detail">
-                                            <dt>夕阳红老年意外险</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>意外身故/残疾/烧烫伤</span>15万</dd>
-
-                                            <dd><span>
-意外医疗费用补偿</span>1.5万</dd>
-
-                                            <dd><span>
-住院津贴</span>100元/天</dd>
-
-
-
-                                        </dl>
                                     </li>
-
-
-
-                                    <li class="y_item1">
-                                        <a href="/front/product/toProduct/ae0c2d1eeca24ae5abe9b5444e851683" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001323067.fid">
-                                            <h2>明亚史带中老年安享计划保障</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p>老年人专属保障</p>
-                                        </a>
-                                        <a href="/front/product/toProduct/ae0c2d1eeca24ae5abe9b5444e851683" target="_blank" class="price">
-                                            <span class="p"><em>398</em>元起</span>
-                                            <span class="c">已售: 1,909</span>
-                                        </a>
-                                        <dl class="detail">
-                                            <dt>明亚史带中老年安享计划保障</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>个人重大疾病保险</span>5万</dd>
-
-                                            <dd><span>
-意外身故/残疾/烧伤</span>20万</dd>
-
-                                            <dd><span>
-公共交通工具意外</span>20万</dd>
-
-                                            <dd><span>
-门诊意外医疗</span>2万</dd>
-
-                                            <dd><span>
-重症住院津贴</span>200元/天</dd>
-
-
-
-                                        </dl>
-                                    </li>
-
-
-
-                                    <li class="y_item1">
-                                        <a href="/front/product/toProduct/af1b6febc05744fea730942fb5f55212" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001307445.fid">
-                                            <h2>易安退休乐老人综合意外险特别版</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p></p>
-                                        </a>
-                                        <a href="/front/product/toProduct/af1b6febc05744fea730942fb5f55212" target="_blank" class="price">
-                                            <span class="p"><em>150</em>元起</span>
-                                            <span class="c">已售: 5,487</span>
-                                        </a>
-                                        <dl class="detail">
-                                            <dt>易安退休乐老人综合意外险特别版</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>意外伤害身故/残疾</span>10万</dd>
-
-                                            <dd><span>
-意外伤害医疗</span>1万</dd>
-
-                                            <dd><span>
-意外伤害住院津贴</span>9000元</dd>
-
-                                            <dd><span>
-骨折意外</span>5000元</dd>
-
-                                            <dd><span>
-救护车车费</span>500元</dd>
-
-
-
-                                        </dl>
-                                    </li>
-
-
-
+                                    {/volist}
                                 </ul>
-
                             </div>
-
-
+                            <!--老年险 end-->
                         </div>
                         <script>
                             $(function(){
@@ -354,17 +246,6 @@
             </div>
             <div class="DragContainer col_sidebar" id="DragContainer14891256454012" starttop="1242" startleft="343" startheight="54" startwidth="285" overclass="OverDragContainer" dropobj="0">
                 <div class="DragBox" id="Item1489544220145" style="visibility: visible;" starttop="1252" startleft="353" startheight="34" startwidth="265" compid="homePageUpFloorLeft">
-
-
-
-
-
-
-
-
-
-
-
                     <div class="y_catatit"><h2><strong>意外险</strong></h2></div><!--楼层标题 end-->
                     <div class="DragBox">
                         <!--楼层左广告组件-->
@@ -374,8 +255,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -383,342 +262,50 @@
             <div class="col_main">
                 <div class="DragContainer main_wrap" id="DragContainer14891256493131" starttop="1306" startleft="641" startheight="511" startwidth="846" overclass="OverDragContainer" dropobj="0">
                     <div class="DragBox" id="Item1489125674943" starttop="1316" startleft="651" startheight="34" startwidth="826" compid="homePageUpFloor">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <!--楼层商品分类切换组件-->
                         <div class="y_productmc">
                             <ul class="y_flortabtit">
-
-
-
-                                <li class="y_active">
-
-
-
-                                    医疗险
-                                </li>
-
-
-
-
-                                <li>
-
-
-                                    健康险
-                                </li>
-
+                                <li class="y_active">医疗险</li>
+                                <li>健康险</li>
                             </ul>
-
-
-
-
+                          <!--医疗险 start-->
                             <div class="y_piclist y_visible">
                                 <ul class="y_itemwrap">
-
-
-
-
-
-
+                                    {volist name='medical' id='vo'}
                                     <li class="y_item1">
-                                        <a href="/front/product/toProduct/944dc0e7c9b6491ba42f8102e9e7b5c8" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001344331.fid">
-                                            <h2>安盛天平百万防癌险2019版</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p>核保条件宽泛，三高等常见病若符合健康告知也可购买；
-                                                0免赔100%报销，保障额度100万；
-                                                进口药，国产药全覆盖；
-                                                特需医疗，质子重离子医疗全覆盖；</p>
+                                        <a href="{:url('goodscontent',['id'=>$vo.id])}" class="con">
+                                            <img class="pic" src="__CDN__{$vo.picarr[0]}">
+                                            <h2>{$vo.goods_name}</h2>
+                                            <p>{$vo.tags}</p>
                                         </a>
-                                        <a href="/front/product/toProduct/944dc0e7c9b6491ba42f8102e9e7b5c8" target="_blank" class="price">
-                                            <span class="p"><em>78</em>元起</span>
-                                            <span class="c">已售: 3,642</span>
+                                        <a href="{:url('goodscontent',['id'=>$vo.id])}" target="_blank" class="price">
+                                            <span class="p"><em>{$vo.price}</em>元起</span>
+                                            <span class="c">已售: {$vo.sales_actual}</span>
                                         </a>
-                                        <dl class="detail">
-                                            <dt>安盛天平百万防癌险2019版</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>恶性肿瘤住院医疗费用</span>100万</dd>
-
-                                            <dd><span>
-恶性肿瘤特殊门诊医疗费用</span>100万</dd>
-
-                                            <dd><span>
-恶性肿瘤住院前后门急诊医疗费用</span>100万</dd>
-
-                                            <dd><span>
-免赔额</span>0元</dd>
-
-
-
-                                        </dl>
                                     </li>
-
-
-
-                                    <li class="y_item1">
-                                        <a href="/front/product/toProduct/dca98d6969034c4aa85ddf86f9eed3ff" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001343752.fid">
-                                            <h2>太平医保无忧百万医疗险2019版</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p>一般医疗保险金:300万;
-                                                重大疾病医疗保险金:300万;
-                                                恶性肿瘤医疗住院津贴:100元/天;
-                                                意外身故:2万;
-                                                特殊门诊医疗费:同年度总限额;
-                                                住院前后7天门急诊费用:同年度总限额;</p>
-                                        </a>
-                                        <a href="/front/product/toProduct/dca98d6969034c4aa85ddf86f9eed3ff" target="_blank" class="price">
-                                            <span class="p"><em>131</em>元起</span>
-                                            <span class="c">已售: 34,580</span>
-                                        </a>
-                                        <dl class="detail">
-                                            <dt>太平医保无忧百万医疗险2019版</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>一般医疗保险金</span>300万</dd>
-
-                                            <dd><span>
-重大疾病医疗保险金</span>300万</dd>
-
-                                            <dd><span>
-恶性肿瘤医疗住院津贴</span>100元/天</dd>
-
-                                            <dd><span>
-意外身故</span>2万</dd>
-
-                                            <dd><span>
-特殊门诊医疗费</span>同年度总限额</dd>
-
-                                            <dd><span>
-住院前后7天门急诊费用</span>同年度总限额</dd>
-
-
-
-                                        </dl>
-                                    </li>
-
-
-
-                                    <li class="y_item1">
-                                        <a href="/front/product/toProduct/e71d14d16916441cafbfcc66ad640848" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001167687.fid">
-                                            <h2>安联臻爱医疗保险（感恩版）</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p></p>
-                                        </a>
-                                        <a href="/front/product/toProduct/e71d14d16916441cafbfcc66ad640848" target="_blank" class="price">
-                                            <span class="p"><em>110</em>元起</span>
-                                            <span class="c">已售: 10,420</span>
-                                        </a>
-                                        <dl class="detail">
-                                            <dt>安联臻爱医疗保险（感恩版）</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>意外身故及伤残</span>50万</dd>
-
-                                            <dd><span>
-一般医疗保险金</span>500万</dd>
-
-                                            <dd><span>
-100种重疾保险金</span>500万</dd>
-
-                                            <dd><span>
-重疾住院垫付及绿通服务</span>智能核保</dd>
-
-                                            <dd><span>
-质子重离子医院就医服务</span>甲状腺疾病无免赔额</dd>
-
-                                            <dd><span>
-
-</span></dd>
-
-
-
-                                        </dl>
-                                    </li>
-
-
-
+                                    {/volist}
                                 </ul>
-
                             </div>
-
-
-
-
-
+                            <!--医疗险结束  END-->
+                            <!--健康险-->
                             <div class="y_piclist">
                                 <ul class="y_itemwrap">
-
-
-
-
-
+                                    {volist name='health' id='vo'}
                                     <li class="y_item1">
-                                        <a href="/front/product/toProduct/8282b50aa5d34ad88f98ebb828641441" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001308854.fid">
-                                            <h2>安联住院宝保障计划（2019版）</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p>住院医疗额度可达2万元;
-                                                意外医疗额度最高2万元;
-                                                身故责任最高20万;</p>
+                                        <a href="{:url('goodscontent',['id'=>$vo.id])}" class="con">
+                                            <img class="pic" src="__CDN__{$vo.picarr[0]}">
+                                            <h2>{$vo.goods_name}</h2>
+                                            <p>{$vo.tags}</p>
                                         </a>
-                                        <a href="/front/product/toProduct/8282b50aa5d34ad88f98ebb828641441" target="_blank" class="price">
-                                            <span class="p"><em>235</em>元起</span>
-                                            <span class="c">已售: 15,321</span>
+                                        <a href="{:url('goodscontent',['id'=>$vo.id])}" target="_blank" class="price">
+                                            <span class="p"><em>{$vo.price}</em>元起</span>
+                                            <span class="c">已售: {$vo.sales_actual}</span>
                                         </a>
-                                        <dl class="detail">
-                                            <dt>安联住院宝保障计划（2019版）</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>意外身故/残疾</span>20万</dd>
-
-                                            <dd><span>
-意外医疗费用</span>2万</dd>
-
-                                            <dd><span>
-疾病住院医疗费用</span>2万</dd>
-
-
-
-                                        </dl>
                                     </li>
-
-
-
-                                    <li class="y_item1">
-                                        <a href="/front/product/toProduct/41182418b8cc440fab5ff7b70f31f2b4" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001307476.fid">
-                                            <h2>易安住院无忧保障计划</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p>疾病/意外住院全保障，高额意外身故伤残保障；
-                                                赔付比例高，含住院津贴；
-                                                高性价比，保障一整年；
-                                            </p>
-                                        </a>
-                                        <a href="/front/product/toProduct/41182418b8cc440fab5ff7b70f31f2b4" target="_blank" class="price">
-                                            <span class="p"><em>209</em>元起</span>
-                                            <span class="c">已售: 3,748</span>
-                                        </a>
-                                        <dl class="detail">
-                                            <dt>易安住院无忧保障计划</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>意外身故/伤残</span>20万</dd>
-
-                                            <dd><span>
-意外医疗费用</span>2万</dd>
-
-                                            <dd><span>
-疾病住院费用</span></dd>
-
-                                            <dd><span>2万</span></dd>
-
-                                            <dd><span>
-住院津贴</span></dd>
-
-                                            <dd><span>50元/天</span></dd>
-
-                                            <dd><span>
-交通意外伤害/伤残</span>20万</dd>
-
-
-
-                                        </dl>
-                                    </li>
-
-
-
-                                    <li class="y_item1">
-                                        <a href="/front/product/toProduct/67ef677473c94ec4928c320796c0b6c1" target="_blank" class="con">
-                                            <img class="pic" src="__CDN__/assets/picture/0001203660.fid">
-                                            <h2>平安住院保障计划</h2>
-                                            <!-- 							    <p>投保年龄50岁及以上都可，不设上限</p> -->
-                                            <!-- 								<p>超高性价比，最低20元即享全年安心</p> -->
-                                            <!-- 							    <p>老人专享，意外骨折、旅游意外全包含</p> -->
-                                            <p>意外医疗:1万元;
-                                                意外/疾病住院医疗:1万元;
-                                                意外身故/残疾:10万元;
-                                                公共交通工具意外身故/残疾:10万元;</p>
-                                        </a>
-                                        <a href="/front/product/toProduct/67ef677473c94ec4928c320796c0b6c1" target="_blank" class="price">
-                                            <span class="p"><em>268</em>元起</span>
-                                            <span class="c">已售: 697</span>
-                                        </a>
-                                        <dl class="detail">
-                                            <dt>平安住院保障计划</dt>
-                                            <!-- 					         <dd><span>火车、轮船意外身故</span>5万</dd> -->
-                                            <!-- 					         <dd><span>一般意外伤残</span>1万</dd> -->
-                                            <!-- 					         <dd><span>意外伤害骨折</span>500元（按档赔付）</dd> -->
-                                            <!-- 					         <dd><span>旅游意外身故</span>2万</dd> -->
-
-
-                                            <dd><span>意外医疗</span>1万元</dd>
-
-                                            <dd><span>
-意外/疾病住院医疗</span>1万元</dd>
-
-                                            <dd><span>
-意外身故/残疾</span>10万元</dd>
-
-                                            <dd><span>
-公共交通工具意外身故/残疾</span>10万元</dd>
-
-
-
-                                        </dl>
-                                    </li>
-
-
-
+                                    {/volist}
                                 </ul>
-
                             </div>
-
-
+                            <!--健康险结束  END-->
                         </div>
                         <script>
                             $(function(){
